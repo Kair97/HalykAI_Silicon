@@ -4,6 +4,7 @@
     python -m agent solve <template> -o <out>  # verdicts in, verdicts out
     python -m agent run                        # full run into work/runs/tryN
     python -m agent compare [tryA tryB]        # score / diff attempts
+    python -m agent report [tryN]              # HTML verdict report
 """
 import sys
 from pathlib import Path
@@ -83,7 +84,13 @@ def cmd_compare(argv):
     return 0
 
 
-COMMANDS = {"check": cmd_check, "solve": cmd_solve, "run": cmd_run,
+def cmd_report(argv):
+    import report
+    print(report.build(argv[0] if argv else None))
+    return 0
+
+
+COMMANDS = {"check": cmd_check, "report": cmd_report, "solve": cmd_solve, "run": cmd_run,
             "compare": cmd_compare}
 
 

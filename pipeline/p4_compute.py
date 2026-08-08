@@ -119,7 +119,22 @@ def main(strict=True):
     for sid in TARGETS:
         txns = txns_all[sid]
         facts["_adj"] = facts["adjustments"][sid]
-        report[sid] = {"trail": log[sid], "cells": {}}
+        report[sid] = {
+            "trail": log[sid],
+            # every retained row, so a reader can see exactly what the metric was
+            # built from rather than taking the total on trust
+            "rows": [{"txn_id": t["txn_id"], "date": t["date"],
+                      "counterparty": t["counterparty"],
+                      "description": t["description"],
+                      "amount": str(t["amount"]) if t["amount"] is not None else None,
+                      "amount_usd": str(t["amount_usd"]) if "amount_usd" in t else None,
+                      "currency": t["currency"], "category": t["category"],
+                      "related_party": t["related_party"], "excluded": t["excluded"],
+                      "one_off": t["one_off"],
+                      "reclassified": bool(t.get("reclassified")),
+                      "notes": t["notes"]} for t in txns],
+            "cells": {},
+        }
         for clause in CLAUSES:
             spec = facts["covenants"][sid][clause]
             desc, requires, fn = metrics.resolve(spec)
@@ -147,7 +162,8 @@ def main(strict=True):
             sub["answers"][sid][clause] = {
                 "status": st, "actual": float(actual), "evidence_txn_id": ev}
             report[sid]["cells"][clause] = {
-                "metric": desc, "raw": str(value), "actual": str(actual),
+                "metric": desc, "requires": list(requires),
+                "raw": str(value), "actual": str(actual),
                 "status": st, "comparison": cmp, "evidence": ev,
                 "threshold": spec["threshold"], "direction": spec["direction"],
                 "unit": spec["unit"], "covenant_text": spec["text"],

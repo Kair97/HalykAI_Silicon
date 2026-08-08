@@ -21,6 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import index_build          # noqa: E402
 import llm                  # noqa: E402
 import reason               # noqa: E402
+import report               # noqa: E402
 import retrieve             # noqa: E402
 from config import LLMConfig, ROOT, SUBMISSION, WORK  # noqa: E402
 
@@ -170,7 +171,7 @@ def main():
     # ---- 4. compute, evidence, emit ---------------------------------------
     banner("4. Compute, evidence, emit")
     p3_categorise.build = lambda: (txns, trail, facts)      # reuse the adjusted set
-    sub, report = p4_compute.main(strict=False)
+    sub, compute_report = p4_compute.main(strict=False)
     sub.update(SUBMISSION)
 
     # ---- 5. review pass over the finished verdicts ------------------------
@@ -178,7 +179,7 @@ def main():
     if use_llm and not a.no_review:
         banner("5. Review pass")
         flagged = 0
-        for sid, data in report.items():
+        for sid, data in compute_report.items():
             for cl, cell in data["cells"].items():
                 r = reason.review_cell(sid, cl, cell, trail=data["trail"])
                 if not r:
@@ -218,6 +219,12 @@ def main():
     # convenience copies at a stable path, always the latest attempt
     out = Path(a.out) if a.out else WORK / "submission.json"
     out.write_text(json.dumps(sub, indent=2), encoding="utf-8")
+
+    try:
+        html_path = report.build(d.name)
+        print(f"report     : {html_path}")
+    except Exception as e:                                      # noqa: BLE001
+        print(f"(report not generated: {e})")
 
     banner("Done")
     cells = sum(len(v) for v in sub["answers"].values())

@@ -5,3 +5,5 @@ agent/work/vectors.json
 txt/
 __pycache__/
 *.pyc
+agent/runs/
+runs/

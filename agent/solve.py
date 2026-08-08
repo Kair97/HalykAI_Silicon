@@ -28,6 +28,7 @@ Examples
 import argparse
 import json
 import os
+import shutil
 import sys
 import time
 from pathlib import Path
@@ -39,7 +40,11 @@ def main():
     ap = argparse.ArgumentParser(
         description="Read a covenant answer template, emit filled-in verdicts.")
     ap.add_argument("template", help="path to submission_template.json")
-    ap.add_argument("-o", "--output", required=True, help="path to write verdicts JSON")
+    ap.add_argument("-o", "--output", default=None,
+                    help="path to write verdicts JSON (default: inside the run "
+                         "directory created for this attempt)")
+    ap.add_argument("--outdir", default=None,
+                    help="where to create the run directory (default: agent/runs)")
     ap.add_argument("--archive", default=None,
                     help="directory holding documents/ and master_ledger_2025.csv "
                          "(default: the template's own directory)")
@@ -56,7 +61,16 @@ def main():
     if not template.is_file():
         raise SystemExit(f"template not found: {template}")
     archive = Path(a.archive).expanduser().resolve() if a.archive else template.parent
-    output = Path(a.output).expanduser().resolve()
+
+    # Each solve gets its own numbered directory, so repeated attempts never
+    # overwrite each other and every answer keeps the evidence behind it.
+    base = Path(a.outdir).expanduser().resolve() if a.outdir else HERE / "runs"
+    base.mkdir(parents=True, exist_ok=True)
+    used = [int(p.name[3:]) for p in base.glob("try*") if p.name[3:].isdigit()]
+    rundir = base / f"try{max(used, default=0) + 1}"
+    rundir.mkdir(parents=True, exist_ok=True)
+    output = (Path(a.output).expanduser().resolve() if a.output
+              else rundir / "verdicts.json")
 
     missing = [n for n in ("master_ledger_2025.csv", "documents")
                if not (archive / n).exists()]
@@ -101,9 +115,24 @@ def main():
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
+    # Collect everything behind this answer next to it: the evidence per cell,
+    # the HTML report, the health/review notes, and the inputs that were used.
+    latest_run = sorted((work / "runs").glob("try*"),
+                        key=lambda p: int(p.name[3:]) if p.name[3:].isdigit() else 0)
+    if latest_run:
+        src = latest_run[-1]
+        for name in ("submission.json", "answers_key_shape.json",
+                     "compute_report.json", "reviews.json", "run_meta.json",
+                     "report.html"):
+            if (src / name).exists():
+                shutil.copy(src / name, rundir / name)
+
     print(f"\ntemplate in  : {template}")
     print(f"archive      : {archive}")
+    print(f"run directory: {rundir}")
     print(f"verdicts out : {output}   [{a.format} shape, {len(got)} cells]")
+    if (rundir / "report.html").exists():
+        print(f"open this    : {rundir / 'report.html'}")
     print(f"elapsed      : {time.time() - t0:.1f}s")
 
 
