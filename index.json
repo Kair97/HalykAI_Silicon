@@ -1,0 +1,2442 @@
+{
+  "scenario_to_account": {
+    "P1": "ACC-7801",
+    "P4": "ACC-7804",
+    "P6": "ACC-7806",
+    "P8": "ACC-7808",
+    "B1": "ACC-7201",
+    "P7": "ACC-7807",
+    "B4": "ACC-7204",
+    "P10": "ACC-7810",
+    "P2": "ACC-7802",
+    "P3": "ACC-7803",
+    "P5": "ACC-7805",
+    "P9": "ACC-7809"
+  },
+  "documents": [
+    {
+      "file": "028324997d3c.txt",
+      "doc_type": "noise",
+      "entity_name": "AGT Aktobe Grain Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1048,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "045516b1b434.txt",
+      "doc_type": "noise",
+      "entity_name": "Zhezkazgan Mining Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2070,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "069f03fe8db5.txt",
+      "doc_type": "noise",
+      "entity_name": null,
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2093,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "06a5a45987c4.txt",
+      "doc_type": "noise",
+      "entity_name": "KDS Kyzylorda Drilling Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1376,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "06bbabc91646.txt",
+      "doc_type": "noise",
+      "entity_name": "EE Ekibastuz Energy JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 913,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "06f67099769a.txt",
+      "doc_type": "noise",
+      "entity_name": null,
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1959,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "07e1a2a0275d.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7810",
+      "scenario_id": "P10",
+      "chars": 5280,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "101b4788f276.txt",
+      "doc_type": "noise",
+      "entity_name": "AGT Aktobe Grain Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 967,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "12727d4e3f31.txt",
+      "doc_type": "noise",
+      "entity_name": "KLT Karaganda Logistics Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1238,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "12c9a176278a.txt",
+      "doc_type": "noise",
+      "entity_name": "APS Atyrau Pipeline Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1155,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "12ddbbdffc72.txt",
+      "doc_type": "noise",
+      "entity_name": "Aktau Port Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 14676,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "1d262694c308.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7805",
+      "scenario_id": "P5",
+      "chars": 47719,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "1e3d464f7db1.txt",
+      "doc_type": "noise",
+      "entity_name": "Almaty Cold Chain JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1831,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "2239b6b58f06.txt",
+      "doc_type": "noise",
+      "entity_name": null,
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1671,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "22c1707dad45.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7808",
+      "scenario_id": "P8",
+      "chars": 5279,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "2334efbbdd1e.txt",
+      "doc_type": "noise",
+      "entity_name": "TCW Taraz Cement Works JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2141,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "265c91f8f86c.txt",
+      "doc_type": "audit_notes",
+      "entity_name": "Sary-Arka Assurance LLP",
+      "account_id": "ACC-7809",
+      "scenario_id": "P9",
+      "chars": 3005,
+      "is_superseded": false,
+      "is_draft": true
+    },
+    {
+      "file": "26acfab1e58b.txt",
+      "doc_type": "noise",
+      "entity_name": "APS Atyrau Pipeline Services JSC",
+      "account_id": "ACC-7807",
+      "scenario_id": "P7",
+      "chars": 1938,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "26b7c3e1bb27.txt",
+      "doc_type": "noise",
+      "entity_name": "APS Atyrau Pipeline Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 18859,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "26cec8516b00.txt",
+      "doc_type": "noise",
+      "entity_name": "SR Shymkent Refinery JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 915,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "2762d1c605e6.txt",
+      "doc_type": "audit_notes",
+      "entity_name": "Altyn-Tau Audit LLP",
+      "account_id": "ACC-7201",
+      "scenario_id": "B1",
+      "chars": 2943,
+      "is_superseded": false,
+      "is_draft": true
+    },
+    {
+      "file": "2bdb134db53c.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7807",
+      "scenario_id": "P7",
+      "chars": 5277,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "2d42722d9dec.txt",
+      "doc_type": "noise",
+      "entity_name": "KDS Kyzylorda Drilling Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1901,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "2d44bdf2437c.txt",
+      "doc_type": "noise",
+      "entity_name": "Aktau Port Services JSC",
+      "account_id": "ACC-7801",
+      "scenario_id": "P1",
+      "chars": 1530,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "2dd8671ac405.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7801",
+      "scenario_id": "P1",
+      "chars": 5265,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "2ed0b2ee4b57.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Sary-Arka Assurance LLP",
+      "account_id": "ACC-7804",
+      "scenario_id": "P4",
+      "chars": 6057,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "2f77cc1329b5.txt",
+      "doc_type": "noise",
+      "entity_name": "EPS Ekibastuz Power Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1947,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "2fe3878667db.txt",
+      "doc_type": "noise",
+      "entity_name": "SR Shymkent Refinery JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 10044,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "30fa9f2d79a7.txt",
+      "doc_type": "noise",
+      "entity_name": "EPS Ekibastuz Power Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 13156,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "318689bd98b8.txt",
+      "doc_type": "noise",
+      "entity_name": "KDS Kyzylorda Drilling Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1031,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "329e188a2c9d.txt",
+      "doc_type": "noise",
+      "entity_name": "Almaty Cold Chain JSC",
+      "account_id": "ACC-7802",
+      "scenario_id": "P2",
+      "chars": 1458,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "32ed58777a1e.txt",
+      "doc_type": "noise",
+      "entity_name": "Almaty Cold Chain JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2177,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "383b36dd42ba.txt",
+      "doc_type": "noise",
+      "entity_name": "Almaty Cold Chain JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 13945,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "3963dfb04b2a.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Altyn-Tau Audit LLP",
+      "account_id": "ACC-7806",
+      "scenario_id": "P6",
+      "chars": 5278,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "3a4aa2dbd6c4.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7804",
+      "scenario_id": "P4",
+      "chars": 47758,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "3c7841365bf3.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7806",
+      "scenario_id": "P6",
+      "chars": 49044,
+      "is_superseded": true,
+      "is_draft": false
+    },
+    {
+      "file": "3c8ebcc791c3.txt",
+      "doc_type": "noise",
+      "entity_name": "SR Shymkent Refinery JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 9923,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "3dab6081e592.txt",
+      "doc_type": "noise",
+      "entity_name": "TCW Taraz Cement Works JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 24653,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "3fd0d34546b5.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Zhetysu Audit & Advisory LLP",
+      "account_id": "ACC-7802",
+      "scenario_id": "P2",
+      "chars": 7048,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "4086afeba3ee.txt",
+      "doc_type": "noise",
+      "entity_name": "Shymkent Refinery Services JSC",
+      "account_id": "ACC-7803",
+      "scenario_id": "P3",
+      "chars": 1545,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "42213fb6062d.txt",
+      "doc_type": "noise",
+      "entity_name": "Shymkent Refinery Services JSC",
+      "account_id": "ACC-7803",
+      "scenario_id": "P3",
+      "chars": 1762,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "446392f86dc9.txt",
+      "doc_type": "noise",
+      "entity_name": "SR Shymkent Refinery JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2055,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "448b59e12768.txt",
+      "doc_type": "audit_notes",
+      "entity_name": "Altyn-Tau Audit LLP",
+      "account_id": "ACC-7201",
+      "scenario_id": "B1",
+      "chars": 2675,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "45ee408eed79.txt",
+      "doc_type": "noise",
+      "entity_name": "Aktau Port Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2248,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "46587c5f8e49.txt",
+      "doc_type": "noise",
+      "entity_name": "EE Ekibastuz Energy JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2014,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "4666dc16c4d7.txt",
+      "doc_type": "noise",
+      "entity_name": "Shymkent Refinery Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1553,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "489af91a1c3d.txt",
+      "doc_type": "noise",
+      "entity_name": "SR Shymkent Refinery JSC",
+      "account_id": "ACC-7204",
+      "scenario_id": "B4",
+      "chars": 1728,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "4908afb7c12c.txt",
+      "doc_type": "noise",
+      "entity_name": "AGT Aktobe Grain Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 15521,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "4a08260debe0.txt",
+      "doc_type": "noise",
+      "entity_name": "Zhezkazgan Mining Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1377,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "4d3091ed5420.txt",
+      "doc_type": "noise",
+      "entity_name": "EPS Ekibastuz Power Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 13435,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "4d8359facdb0.txt",
+      "doc_type": "noise",
+      "entity_name": "EPS Ekibastuz Power Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1520,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "4db1d630055f.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Sary-Arka Assurance LLP",
+      "account_id": "ACC-7810",
+      "scenario_id": "P10",
+      "chars": 6443,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "4db419cab24b.txt",
+      "doc_type": "noise",
+      "entity_name": "Almaty Cold Chain JSC",
+      "account_id": "ACC-7802",
+      "scenario_id": "P2",
+      "chars": 1974,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "4def636484eb.txt",
+      "doc_type": "noise",
+      "entity_name": "APS Atyrau Pipeline Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1250,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "5082f6a594a4.txt",
+      "doc_type": "noise",
+      "entity_name": "KLT Karaganda Logistics Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1493,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "52e0fbb71aeb.txt",
+      "doc_type": "noise",
+      "entity_name": "EE Ekibastuz Energy JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 886,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "5372628c3788.txt",
+      "doc_type": "noise",
+      "entity_name": "Almaty Cold Chain JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2243,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "540ad61311f1.txt",
+      "doc_type": "noise",
+      "entity_name": "Zhezkazgan Mining Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1242,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "574d17b3a40b.txt",
+      "doc_type": "noise",
+      "entity_name": null,
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 8624,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "5797acb4d7e2.txt",
+      "doc_type": "noise",
+      "entity_name": "Almaty Cold Chain JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1048,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "57a1d81c8b17.txt",
+      "doc_type": "noise",
+      "entity_name": "Aktau Port Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 14944,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "596a5d8b04f5.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Turan Verity Audit LLP",
+      "account_id": "ACC-7807",
+      "scenario_id": "P7",
+      "chars": 5890,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "59b12585b7ec.txt",
+      "doc_type": "noise",
+      "entity_name": "Aktau Port Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1223,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "5f1aff0e8590.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7802",
+      "scenario_id": "P2",
+      "chars": 47853,
+      "is_superseded": true,
+      "is_draft": false
+    },
+    {
+      "file": "603a0251f913.txt",
+      "doc_type": "noise",
+      "entity_name": "EPS Ekibastuz Power Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1154,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "61dfc54675dc.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7808",
+      "scenario_id": "P8",
+      "chars": 48155,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "6387d5cd9c00.txt",
+      "doc_type": "audit_notes",
+      "entity_name": "Turan Verity Audit LLP",
+      "account_id": "ACC-7808",
+      "scenario_id": "P8",
+      "chars": 2989,
+      "is_superseded": false,
+      "is_draft": true
+    },
+    {
+      "file": "63e162bd710b.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7802",
+      "scenario_id": "P2",
+      "chars": 4741,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "65890f0c577c.txt",
+      "doc_type": "noise",
+      "entity_name": "TCW Taraz Cement Works JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 957,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "6686c0493014.txt",
+      "doc_type": "noise",
+      "entity_name": "Aktau Port Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1430,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "68d200eca6b9.txt",
+      "doc_type": "noise",
+      "entity_name": "APS Atyrau Pipeline Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 979,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "69585c338a66.txt",
+      "doc_type": "noise",
+      "entity_name": null,
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 8540,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "6963dfd94d4c.txt",
+      "doc_type": "noise",
+      "entity_name": null,
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1207,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "6acb5bbc3e70.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7807",
+      "scenario_id": "P7",
+      "chars": 47806,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "6ad34a2726b1.txt",
+      "doc_type": "noise",
+      "entity_name": "EPS Ekibastuz Power Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 10613,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "6dd84ab9ef0e.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7801",
+      "scenario_id": "P1",
+      "chars": 48454,
+      "is_superseded": true,
+      "is_draft": false
+    },
+    {
+      "file": "6f1c06f8479a.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Turan Verity Audit LLP",
+      "account_id": "ACC-7803",
+      "scenario_id": "P3",
+      "chars": 6917,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "73937c1e9347.txt",
+      "doc_type": "noise",
+      "entity_name": "Zhezkazgan Mining Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2519,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "75cf2363377b.txt",
+      "doc_type": "noise",
+      "entity_name": "Almaty Cold Chain JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 4752,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "75d09b747402.txt",
+      "doc_type": "noise",
+      "entity_name": "TCW Taraz Cement Works JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1821,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "760626f5247c.txt",
+      "doc_type": "noise",
+      "entity_name": "Almaty Cold Chain JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1202,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "76e6d88d0444.txt",
+      "doc_type": "noise",
+      "entity_name": "APS Atyrau Pipeline Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1379,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "77628b8b3cab.txt",
+      "doc_type": "noise",
+      "entity_name": "Shymkent Refinery Services JSC",
+      "account_id": "ACC-7803",
+      "scenario_id": "P3",
+      "chars": 1484,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "782513c9c89d.txt",
+      "doc_type": "noise",
+      "entity_name": "APS Atyrau Pipeline Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 19017,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "78d55cf4e938.txt",
+      "doc_type": "noise",
+      "entity_name": "Shymkent Refinery Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 5887,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "7903e7d18e94.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Sary-Arka Assurance LLP",
+      "account_id": "ACC-7809",
+      "scenario_id": "P9",
+      "chars": 6004,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "7965d4e85cb1.txt",
+      "doc_type": "noise",
+      "entity_name": "Aktau Port Services JSC",
+      "account_id": "ACC-7801",
+      "scenario_id": "P1",
+      "chars": 1737,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "7b9cafe845ae.txt",
+      "doc_type": "noise",
+      "entity_name": "TCW Taraz Cement Works JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 24753,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "7c871235eb76.txt",
+      "doc_type": "noise",
+      "entity_name": "TCW Taraz Cement Works JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1617,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "7cd2f8a812cd.txt",
+      "doc_type": "noise",
+      "entity_name": "Aktau Port Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1207,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "7db6db025e61.txt",
+      "doc_type": "noise",
+      "entity_name": "Almaty Cold Chain JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 4517,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "7dfc1b7d6b82.txt",
+      "doc_type": "noise",
+      "entity_name": "AGT Aktobe Grain Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1523,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "7e8cfd7b977f.txt",
+      "doc_type": "noise",
+      "entity_name": "APS Atyrau Pipeline Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1630,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "8016dee930c0.txt",
+      "doc_type": "noise",
+      "entity_name": "APS Atyrau Pipeline Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1889,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "82954f7cc62a.txt",
+      "doc_type": "noise",
+      "entity_name": "KLT Karaganda Logistics Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1673,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "82c3690a6abd.txt",
+      "doc_type": "noise",
+      "entity_name": "AGT Aktobe Grain Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1534,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "82ed830621e9.txt",
+      "doc_type": "noise",
+      "entity_name": "EPS Ekibastuz Power Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1543,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "831f003ca3cc.txt",
+      "doc_type": "noise",
+      "entity_name": "Almaty Cold Chain JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 14195,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "832e580c962f.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7809",
+      "scenario_id": "P9",
+      "chars": 48837,
+      "is_superseded": true,
+      "is_draft": false
+    },
+    {
+      "file": "85486bfc847f.txt",
+      "doc_type": "noise",
+      "entity_name": "KDS Kyzylorda Drilling Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 23698,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "85afaaca89ad.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7803",
+      "scenario_id": "P3",
+      "chars": 48428,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "896b7933db48.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "K Kokshe Audit Group LLP",
+      "account_id": "ACC-7801",
+      "scenario_id": "P1",
+      "chars": 5570,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "89af6ae7964f.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7805",
+      "scenario_id": "P5",
+      "chars": 5329,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "8a2cdb66f18b.txt",
+      "doc_type": "noise",
+      "entity_name": "EPS Ekibastuz Power Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1248,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "8af2d7044491.txt",
+      "doc_type": "noise",
+      "entity_name": "Aktau Port Services JSC",
+      "account_id": "ACC-7801",
+      "scenario_id": "P1",
+      "chars": 1980,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "8b05e54f627a.txt",
+      "doc_type": "noise",
+      "entity_name": "KDS Kyzylorda Drilling Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1953,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "8ba1a3214d2b.txt",
+      "doc_type": "noise",
+      "entity_name": "Almaty Cold Chain JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 4174,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "8d878af064f2.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7801",
+      "scenario_id": "P1",
+      "chars": 48219,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "8fe082eccf3f.txt",
+      "doc_type": "noise",
+      "entity_name": "KLT Karaganda Logistics Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2069,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "90f5d5633b97.txt",
+      "doc_type": "noise",
+      "entity_name": "Zhezkazgan Mining Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1899,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "922a5d5de364.txt",
+      "doc_type": "noise",
+      "entity_name": "Shymkent Refinery Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1538,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "932effc6f886.txt",
+      "doc_type": "noise",
+      "entity_name": "Aktau Port Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2702,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "979fdc1f43a3.txt",
+      "doc_type": "noise",
+      "entity_name": "Shymkent Refinery Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 9438,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "9929ab063c67.txt",
+      "doc_type": "noise",
+      "entity_name": "KDS Kyzylorda Drilling Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1635,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "993880c995f0.txt",
+      "doc_type": "noise",
+      "entity_name": "SR Shymkent Refinery JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 10276,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "99648d24c6ec.txt",
+      "doc_type": "noise",
+      "entity_name": "AGT Aktobe Grain Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1239,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "9975fa09f79c.txt",
+      "doc_type": "noise",
+      "entity_name": "Aktau Port Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1050,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "9ab2bb104c8d.txt",
+      "doc_type": "noise",
+      "entity_name": "EE Ekibastuz Energy JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2468,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "9c85e7d76921.txt",
+      "doc_type": "noise",
+      "entity_name": "EPS Ekibastuz Power Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1838,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "9f1a89a5ed42.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7804",
+      "scenario_id": "P4",
+      "chars": 5266,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "a0af1fae76dc.txt",
+      "doc_type": "noise",
+      "entity_name": "KLT Karaganda Logistics Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1243,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "a144690a213c.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7204",
+      "scenario_id": "B4",
+      "chars": 5565,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "a16d7a619f87.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Altyn-Tau Audit LLP",
+      "account_id": "ACC-7201",
+      "scenario_id": "B1",
+      "chars": 6876,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "a1bc2ea19594.txt",
+      "doc_type": "noise",
+      "entity_name": "SR Shymkent Refinery JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1198,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "a23a9326efe4.txt",
+      "doc_type": "noise",
+      "entity_name": "EE Ekibastuz Energy JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1212,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "a2ca5ce24acb.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7810",
+      "scenario_id": "P10",
+      "chars": 48545,
+      "is_superseded": true,
+      "is_draft": false
+    },
+    {
+      "file": "a2f88c901ae1.txt",
+      "doc_type": "noise",
+      "entity_name": "Shymkent Refinery Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2204,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "a5cc1400b640.txt",
+      "doc_type": "noise",
+      "entity_name": "Sarybel Energy Holding JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 9166,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "a6e96851b6d2.txt",
+      "doc_type": "noise",
+      "entity_name": "SR Shymkent Refinery JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1659,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "a6f8f8c87936.txt",
+      "doc_type": "noise",
+      "entity_name": "Almaty Cold Chain JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 14103,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "a81217cea0a1.txt",
+      "doc_type": "audit_notes",
+      "entity_name": "Turan Verity Audit LLP",
+      "account_id": "ACC-7803",
+      "scenario_id": "P3",
+      "chars": 2984,
+      "is_superseded": false,
+      "is_draft": true
+    },
+    {
+      "file": "a96fe7b0cbb0.txt",
+      "doc_type": "noise",
+      "entity_name": "Zhezkazgan Mining Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2151,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "aaf665cbc612.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7809",
+      "scenario_id": "P9",
+      "chars": 5211,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "aaff7bd53ea8.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7804",
+      "scenario_id": "P4",
+      "chars": 48038,
+      "is_superseded": true,
+      "is_draft": false
+    },
+    {
+      "file": "abe2474bd443.txt",
+      "doc_type": "noise",
+      "entity_name": "Shymkent Refinery Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1858,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "ad991140ab81.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7807",
+      "scenario_id": "P7",
+      "chars": 48024,
+      "is_superseded": true,
+      "is_draft": false
+    },
+    {
+      "file": "adf71c64ab80.txt",
+      "doc_type": "noise",
+      "entity_name": "EE Ekibastuz Energy JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 998,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "ae477cc510f9.txt",
+      "doc_type": "noise",
+      "entity_name": null,
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 8477,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "aef9b4667acd.txt",
+      "doc_type": "noise",
+      "entity_name": "KDS Kyzylorda Drilling Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 23706,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "af54efbfc0bd.txt",
+      "doc_type": "noise",
+      "entity_name": "Aktau Port Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 14904,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "af9b9484cfd5.txt",
+      "doc_type": "noise",
+      "entity_name": "KLT Karaganda Logistics Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2156,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "b084add0e80a.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7201",
+      "scenario_id": "B1",
+      "chars": 47938,
+      "is_superseded": true,
+      "is_draft": false
+    },
+    {
+      "file": "b08e5ef1725e.txt",
+      "doc_type": "noise",
+      "entity_name": "TCW Taraz Cement Works JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1935,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "b2519c8e3ea4.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7802",
+      "scenario_id": "P2",
+      "chars": 47499,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "b38facf69a94.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7201",
+      "scenario_id": "B1",
+      "chars": 47658,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "b43708a40daa.txt",
+      "doc_type": "noise",
+      "entity_name": "SR Shymkent Refinery JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1213,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "b5aecff2bbf2.txt",
+      "doc_type": "noise",
+      "entity_name": "KDS Kyzylorda Drilling Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1388,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "b5ccff3af55d.txt",
+      "doc_type": "audit_notes",
+      "entity_name": "Altyn-Tau Audit LLP",
+      "account_id": "ACC-7806",
+      "scenario_id": "P6",
+      "chars": 2937,
+      "is_superseded": false,
+      "is_draft": true
+    },
+    {
+      "file": "b6612c17e4a1.txt",
+      "doc_type": "noise",
+      "entity_name": "SR Shymkent Refinery JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1468,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "b9f3f94caab2.txt",
+      "doc_type": "noise",
+      "entity_name": "TCW Taraz Cement Works JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1478,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "ba475cfc33a4.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7810",
+      "scenario_id": "P10",
+      "chars": 48311,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "bac990fa3090.txt",
+      "doc_type": "noise",
+      "entity_name": "EPS Ekibastuz Power Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 13363,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "bc5451f75caf.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7204",
+      "scenario_id": "B4",
+      "chars": 47732,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "bd680edc8455.txt",
+      "doc_type": "noise",
+      "entity_name": "EE Ekibastuz Energy JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1754,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "be1e2186c99d.txt",
+      "doc_type": "noise",
+      "entity_name": "Shymkent Refinery Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1057,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "be7c1bba8940.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7806",
+      "scenario_id": "P6",
+      "chars": 48814,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "bf9b7bffc514.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Turan Verity Audit LLP",
+      "account_id": "ACC-7808",
+      "scenario_id": "P8",
+      "chars": 5581,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "c10ebf055fa5.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7805",
+      "scenario_id": "P5",
+      "chars": 48027,
+      "is_superseded": true,
+      "is_draft": false
+    },
+    {
+      "file": "c282688e2e6f.txt",
+      "doc_type": "noise",
+      "entity_name": "Zhezkazgan Mining Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1032,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "c28da1ee7a38.txt",
+      "doc_type": "noise",
+      "entity_name": "EPS Ekibastuz Power Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 10629,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "c2c9382c9168.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7809",
+      "scenario_id": "P9",
+      "chars": 48579,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "c3ede730047b.txt",
+      "doc_type": "noise",
+      "entity_name": "Shymkent Refinery Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2170,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "c459a9940b23.txt",
+      "doc_type": "noise",
+      "entity_name": "AGT Aktobe Grain Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 15691,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "c45c84b0bada.txt",
+      "doc_type": "noise",
+      "entity_name": "APS Atyrau Pipeline Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 19058,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "c66b5b638410.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7201",
+      "scenario_id": "B1",
+      "chars": 5320,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "c7cf684da3bd.txt",
+      "doc_type": "noise",
+      "entity_name": "Almaty Cold Chain JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 919,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "cc0bf6c6ef5d.txt",
+      "doc_type": "noise",
+      "entity_name": "AGT Aktobe Grain Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1839,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "ce43cf0374a7.txt",
+      "doc_type": "noise",
+      "entity_name": "Shymkent Refinery Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 5667,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "cf217b0114e7.txt",
+      "doc_type": "noise",
+      "entity_name": "Aktau Port Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1765,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "cf741bbf7688.txt",
+      "doc_type": "noise",
+      "entity_name": "SR Shymkent Refinery JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1178,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "d4e9f2bbf3e9.txt",
+      "doc_type": "noise",
+      "entity_name": "AGT Aktobe Grain Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2186,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "d759709e3fe8.txt",
+      "doc_type": "noise",
+      "entity_name": "Shymkent Refinery Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2717,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "dbec9933b41d.txt",
+      "doc_type": "noise",
+      "entity_name": "Almaty Cold Chain JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1518,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "dd2d1ddba258.txt",
+      "doc_type": "noise",
+      "entity_name": "AGT Aktobe Grain Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 15787,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "e16b5e6532b5.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7204",
+      "scenario_id": "B4",
+      "chars": 48036,
+      "is_superseded": true,
+      "is_draft": false
+    },
+    {
+      "file": "e32b7c0f53e2.txt",
+      "doc_type": "noise",
+      "entity_name": "EPS Ekibastuz Power Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 10626,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "e334c4d4d3ea.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Turan Verity Audit LLP",
+      "account_id": "ACC-7204",
+      "scenario_id": "B4",
+      "chars": 6782,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "e3b0ed1db08f.txt",
+      "doc_type": "noise",
+      "entity_name": "AGT Aktobe Grain Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2248,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "e597b53c19b4.txt",
+      "doc_type": "noise",
+      "entity_name": "AGT Aktobe Grain Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2151,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "e6503fd13537.txt",
+      "doc_type": "noise",
+      "entity_name": "KLT Karaganda Logistics Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1379,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "e96ad38e6a71.txt",
+      "doc_type": "noise",
+      "entity_name": "KLT Karaganda Logistics Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1390,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "ea458c3cad3b.txt",
+      "doc_type": "noise",
+      "entity_name": "KDS Kyzylorda Drilling Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 23668,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "ea586aea1d28.txt",
+      "doc_type": "noise",
+      "entity_name": "Shymkent Refinery Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 9128,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "ea8d8bac3e62.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Zhetysu Audit & Advisory LLP",
+      "account_id": "ACC-7805",
+      "scenario_id": "P5",
+      "chars": 5279,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "eaf5ba5804c5.txt",
+      "doc_type": "noise",
+      "entity_name": null,
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1714,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "eafab79c5e4d.txt",
+      "doc_type": "noise",
+      "entity_name": "EPS Ekibastuz Power Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 2195,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "eb2ec67083cf.txt",
+      "doc_type": "noise",
+      "entity_name": "KLT Karaganda Logistics Terminal JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1034,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "edfab0e95f79.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7808",
+      "scenario_id": "P8",
+      "chars": 48389,
+      "is_superseded": true,
+      "is_draft": false
+    },
+    {
+      "file": "ee0a57db71cc.txt",
+      "doc_type": "noise",
+      "entity_name": "TCW Taraz Cement Works JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 24974,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "ee32532e1126.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7803",
+      "scenario_id": "P3",
+      "chars": 5331,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "f082cbbc33fb.txt",
+      "doc_type": "noise",
+      "entity_name": "EE Ekibastuz Energy JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1343,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "f205353029f2.txt",
+      "doc_type": "noise",
+      "entity_name": "Almaty Cold Chain JSC",
+      "account_id": "ACC-7802",
+      "scenario_id": "P2",
+      "chars": 1526,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "f3fa6d20c8a1.txt",
+      "doc_type": "noise",
+      "entity_name": null,
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 3,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "f4dfb4296f93.txt",
+      "doc_type": "noise",
+      "entity_name": "SR Shymkent Refinery JSC",
+      "account_id": "ACC-7204",
+      "scenario_id": "B4",
+      "chars": 1453,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "f5e315b390df.txt",
+      "doc_type": "noise",
+      "entity_name": "EE Ekibastuz Energy JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1419,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "f5ff7f578228.txt",
+      "doc_type": "noise",
+      "entity_name": "Shymkent Refinery Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 5794,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "f892239d39eb.txt",
+      "doc_type": "noise",
+      "entity_name": "EPS Ekibastuz Power Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 1498,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "f8bea9e2a224.txt",
+      "doc_type": "noise",
+      "entity_name": "Shymkent Refinery Services JSC",
+      "account_id": null,
+      "scenario_id": null,
+      "chars": 8839,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "ffb3a98e3733.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7803",
+      "scenario_id": "P3",
+      "chars": 48663,
+      "is_superseded": true,
+      "is_draft": false
+    },
+    {
+      "file": "ffb902ce0a5b.txt",
+      "doc_type": "noise",
+      "entity_name": "AGT Aktobe Grain Terminal JSC",
+      "account_id": "ACC-7804",
+      "scenario_id": "P4",
+      "chars": 1530,
+      "is_superseded": false,
+      "is_draft": false
+    }
+  ],
+  "kept": [
+    {
+      "file": "07e1a2a0275d.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7810",
+      "scenario_id": "P10",
+      "chars": 5280,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "1d262694c308.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7805",
+      "scenario_id": "P5",
+      "chars": 47719,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "22c1707dad45.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7808",
+      "scenario_id": "P8",
+      "chars": 5279,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "265c91f8f86c.txt",
+      "doc_type": "audit_notes",
+      "entity_name": "Sary-Arka Assurance LLP",
+      "account_id": "ACC-7809",
+      "scenario_id": "P9",
+      "chars": 3005,
+      "is_superseded": false,
+      "is_draft": true
+    },
+    {
+      "file": "2762d1c605e6.txt",
+      "doc_type": "audit_notes",
+      "entity_name": "Altyn-Tau Audit LLP",
+      "account_id": "ACC-7201",
+      "scenario_id": "B1",
+      "chars": 2943,
+      "is_superseded": false,
+      "is_draft": true
+    },
+    {
+      "file": "2bdb134db53c.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7807",
+      "scenario_id": "P7",
+      "chars": 5277,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "2dd8671ac405.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7801",
+      "scenario_id": "P1",
+      "chars": 5265,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "2ed0b2ee4b57.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Sary-Arka Assurance LLP",
+      "account_id": "ACC-7804",
+      "scenario_id": "P4",
+      "chars": 6057,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "3963dfb04b2a.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Altyn-Tau Audit LLP",
+      "account_id": "ACC-7806",
+      "scenario_id": "P6",
+      "chars": 5278,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "3a4aa2dbd6c4.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7804",
+      "scenario_id": "P4",
+      "chars": 47758,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "3fd0d34546b5.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Zhetysu Audit & Advisory LLP",
+      "account_id": "ACC-7802",
+      "scenario_id": "P2",
+      "chars": 7048,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "448b59e12768.txt",
+      "doc_type": "audit_notes",
+      "entity_name": "Altyn-Tau Audit LLP",
+      "account_id": "ACC-7201",
+      "scenario_id": "B1",
+      "chars": 2675,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "4db1d630055f.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Sary-Arka Assurance LLP",
+      "account_id": "ACC-7810",
+      "scenario_id": "P10",
+      "chars": 6443,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "596a5d8b04f5.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Turan Verity Audit LLP",
+      "account_id": "ACC-7807",
+      "scenario_id": "P7",
+      "chars": 5890,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "61dfc54675dc.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7808",
+      "scenario_id": "P8",
+      "chars": 48155,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "6387d5cd9c00.txt",
+      "doc_type": "audit_notes",
+      "entity_name": "Turan Verity Audit LLP",
+      "account_id": "ACC-7808",
+      "scenario_id": "P8",
+      "chars": 2989,
+      "is_superseded": false,
+      "is_draft": true
+    },
+    {
+      "file": "63e162bd710b.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7802",
+      "scenario_id": "P2",
+      "chars": 4741,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "6acb5bbc3e70.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7807",
+      "scenario_id": "P7",
+      "chars": 47806,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "6f1c06f8479a.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Turan Verity Audit LLP",
+      "account_id": "ACC-7803",
+      "scenario_id": "P3",
+      "chars": 6917,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "7903e7d18e94.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Sary-Arka Assurance LLP",
+      "account_id": "ACC-7809",
+      "scenario_id": "P9",
+      "chars": 6004,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "85afaaca89ad.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7803",
+      "scenario_id": "P3",
+      "chars": 48428,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "896b7933db48.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "K Kokshe Audit Group LLP",
+      "account_id": "ACC-7801",
+      "scenario_id": "P1",
+      "chars": 5570,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "89af6ae7964f.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7805",
+      "scenario_id": "P5",
+      "chars": 5329,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "8d878af064f2.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7801",
+      "scenario_id": "P1",
+      "chars": 48219,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "9f1a89a5ed42.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7804",
+      "scenario_id": "P4",
+      "chars": 5266,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "a144690a213c.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7204",
+      "scenario_id": "B4",
+      "chars": 5565,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "a16d7a619f87.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Altyn-Tau Audit LLP",
+      "account_id": "ACC-7201",
+      "scenario_id": "B1",
+      "chars": 6876,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "a81217cea0a1.txt",
+      "doc_type": "audit_notes",
+      "entity_name": "Turan Verity Audit LLP",
+      "account_id": "ACC-7803",
+      "scenario_id": "P3",
+      "chars": 2984,
+      "is_superseded": false,
+      "is_draft": true
+    },
+    {
+      "file": "aaf665cbc612.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7809",
+      "scenario_id": "P9",
+      "chars": 5211,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "b2519c8e3ea4.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7802",
+      "scenario_id": "P2",
+      "chars": 47499,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "b38facf69a94.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7201",
+      "scenario_id": "B1",
+      "chars": 47658,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "b5ccff3af55d.txt",
+      "doc_type": "audit_notes",
+      "entity_name": "Altyn-Tau Audit LLP",
+      "account_id": "ACC-7806",
+      "scenario_id": "P6",
+      "chars": 2937,
+      "is_superseded": false,
+      "is_draft": true
+    },
+    {
+      "file": "ba475cfc33a4.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7810",
+      "scenario_id": "P10",
+      "chars": 48311,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "bc5451f75caf.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7204",
+      "scenario_id": "B4",
+      "chars": 47732,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "be7c1bba8940.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7806",
+      "scenario_id": "P6",
+      "chars": 48814,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "bf9b7bffc514.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Turan Verity Audit LLP",
+      "account_id": "ACC-7808",
+      "scenario_id": "P8",
+      "chars": 5581,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "c2c9382c9168.txt",
+      "doc_type": "credit_agreement",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7809",
+      "scenario_id": "P9",
+      "chars": 48579,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "c66b5b638410.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7201",
+      "scenario_id": "B1",
+      "chars": 5320,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "e334c4d4d3ea.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Turan Verity Audit LLP",
+      "account_id": "ACC-7204",
+      "scenario_id": "B4",
+      "chars": 6782,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "ea8d8bac3e62.txt",
+      "doc_type": "financial_statements",
+      "entity_name": "Zhetysu Audit & Advisory LLP",
+      "account_id": "ACC-7805",
+      "scenario_id": "P5",
+      "chars": 5279,
+      "is_superseded": false,
+      "is_draft": false
+    },
+    {
+      "file": "ee32532e1126.txt",
+      "doc_type": "kyc_dossier",
+      "entity_name": "Halyk Bank of Kazakhstan JSC",
+      "account_id": "ACC-7803",
+      "scenario_id": "P3",
+      "chars": 5331,
+      "is_superseded": false,
+      "is_draft": false
+    }
+  ],
+  "problems": [],
+  "counts": {
+    "total": 200,
+    "kept": 41,
+    "by_type": {
+      "kyc_dossier": 11,
+      "financial_statements": 12,
+      "credit_agreement": 12,
+      "audit_notes": 6
+    },
+    "superseded_dropped": 12
+  }
+}

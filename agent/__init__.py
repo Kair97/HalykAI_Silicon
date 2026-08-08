@@ -1,0 +1,1 @@
+"""Halyk covenant compliance agent."""

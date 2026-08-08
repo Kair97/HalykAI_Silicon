@@ -1,0 +1,15 @@
+{
+  "llm_enabled": false,
+  "model": "openai/gpt-oss-120b",
+  "llm_calls": {
+    "chat": 0,
+    "embed": 0,
+    "rerank": 0,
+    "cached": 0,
+    "failed": 0
+  },
+  "rows_relabelled_by_llm": 0,
+  "cells_reviewed": 0,
+  "cells_flagged": 0,
+  "seconds": 0.5
+}
