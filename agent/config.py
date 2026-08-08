@@ -8,7 +8,11 @@ from pathlib import Path
 
 AGENT_DIR = Path(__file__).resolve().parent
 ROOT = Path(os.environ.get("HALYK_ROOT", AGENT_DIR.parent))
-ARCHIVE = ROOT / "agentic-bank-public"
+# The dataset directory is an explicit input, not a fixed folder name: on
+# submission day the private archive may live anywhere. `--archive` sets this.
+# Every module must resolve it the same way or one of them will look for a key
+# that is not there.
+ARCHIVE = Path(os.environ.get("HALYK_ARCHIVE", ROOT / "agentic-bank-public"))
 WORK = Path(os.environ.get("AGENT_WORK", AGENT_DIR / "work"))
 CACHE = WORK / "cache"
 

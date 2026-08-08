@@ -61,7 +61,7 @@
       "covenants": {
         "6.1": {
           "status": "COMPLIANT",
-          "actual": 0.37,
+          "actual": 0.33,
           "evidence_txn_id": null
         },
         "6.2": {

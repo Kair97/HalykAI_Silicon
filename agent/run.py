@@ -23,7 +23,7 @@ import llm                  # noqa: E402
 import reason               # noqa: E402
 import report               # noqa: E402
 import retrieve             # noqa: E402
-from config import LLMConfig, ROOT, SUBMISSION, WORK  # noqa: E402
+from config import ARCHIVE, LLMConfig, ROOT, SUBMISSION, WORK  # noqa: E402
 
 sys.path.insert(0, str(ROOT / "pipeline"))
 
@@ -77,7 +77,7 @@ def main():
     # derives its whole target list from it and never assumes P1..P10/B1/B4.
     if a.template:
         src = Path(a.template).resolve()
-        dst = ROOT / "agentic-bank-public" / "submission_template.json"
+        dst = ARCHIVE / "submission_template.json"
         if src != dst.resolve():
             shutil.copy(src, dst)
             print(f"using template {src}")
@@ -234,7 +234,7 @@ def main():
     print(f"llm calls  : {llm.stats()}")
     print(f"elapsed    : {time.time() - t0:.1f}s")
 
-    key = ROOT / "agentic-bank-public" / "ground_truth.json"
+    key = ARCHIVE / "ground_truth.json"
     if key.exists():
         print()
         import score
