@@ -2432,10 +2432,10 @@
     "total": 200,
     "kept": 41,
     "by_type": {
-      "kyc_dossier": 11,
+      "audit_notes": 6,
       "financial_statements": 12,
       "credit_agreement": 12,
-      "audit_notes": 6
+      "kyc_dossier": 11
     },
     "superseded_dropped": 12
   }

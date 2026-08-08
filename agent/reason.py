@@ -213,3 +213,50 @@ def cross_check(sid, clause, cell, trail):
         return review_cell(sid, clause, cell, trail=trail)
     finally:
         LLMConfig.model = primary
+
+
+# --------------------------------------------------------------------- 4. one-off items
+def classify_one_off(rows):
+    """Which operating costs are genuinely NON-RECURRING?
+
+    Covenants of the 'adjusted EBITDA' family add back разовые статьи (one-off
+    items). The test is whether the underlying EVENT repeats, not whether the
+    wording sounds unusual -- and that is a domain judgement, not a keyword match.
+    A dredging contractor clearing silt from a berth is routine port maintenance;
+    a flood remediation or a demurrage arbitration is not. Getting this single
+    distinction wrong moved a real cell from 0.33 to 0.37.
+
+    rows: [{txn_id, description, counterparty}] -> {txn_id: bool}
+    """
+    if not rows:
+        return {}
+    listing = "\n".join(
+        f'{r["txn_id"]} | {r["counterparty"]} | {r["description"]}' for r in rows)
+    system = (
+        "You are a credit-risk analyst deciding which operating costs a lender "
+        "would allow a borrower to ADD BACK to EBITDA as non-recurring.\n\n"
+        "Answer true only if the underlying EVENT is genuinely one-off for this "
+        "kind of business:\n"
+        "  true  - damage from a specific incident (flood, fire, storm), a legal "
+        "dispute or arbitration, a restructuring, a one-time write-off\n"
+        "  false - anything a business of this type pays for repeatedly: routine "
+        "maintenance, cleaning, dredging, inspections, surveys, servicing "
+        "contracts, periodic overhauls\n\n"
+        "Wording that merely sounds unusual is NOT enough. Ask whether this same "
+        "cost would plausibly appear again next year. If it would, answer false. "
+        "When genuinely unsure answer false -- wrongly adding back inflates "
+        "earnings, which is the error a lender cares about.")
+    out = llm.chat_json(
+        system, f"Borrower's operating costs:\n{listing}",
+        schema_hint='{"TXN-XX-0001": {"one_off": false, "confidence": 0.0-1.0, '
+                    '"why": "few words"}}',
+        max_tokens=min(4000, 200 + 80 * len(rows)))
+    if not isinstance(out, dict):
+        return {}
+    res = {}
+    for tid, v in out.items():
+        if not isinstance(v, dict) or "one_off" not in v:
+            continue
+        if float(v.get("confidence", 1)) >= 0.6:
+            res[tid] = bool(v["one_off"])
+    return res

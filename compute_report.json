@@ -152,10 +152,10 @@
     "cells": {
       "6.1": {
         "metric": "adjusted_ebitda_margin",
-        "raw": "0.3672957320571404572356630723",
-        "actual": "0.37",
+        "raw": "0.3314123065566434759783274103",
+        "actual": "0.33",
         "status": "COMPLIANT",
-        "comparison": "0.3672957320571404572356630723 >= 0.28 (minimum)",
+        "comparison": "0.3314123065566434759783274103 >= 0.28 (minimum)",
         "evidence": null,
         "threshold": "0.28",
         "direction": "min",

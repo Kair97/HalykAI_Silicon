@@ -47,8 +47,25 @@ RULES = [
     ("opex",              r"(servicing and operating costs|operating and maintenance"
                           r"|servicing contract|servicing \d{4}|works$|legal servicing)"),
 ]
-# non-recurring items eligible for an EBITDA add-back when the covenant allows it
-ONE_OFF = re.compile(r"(remediation|repair works|arbitration|clearance works|dispute)", re.I)
+# Non-recurring items eligible for an EBITDA add-back when the covenant allows it.
+# The test is whether the EVENT recurs, not whether the wording sounds unusual:
+#   flood remediation, silo repair, a demurrage arbitration -> genuinely one-off
+#   berth silt cleaning / dredging, routine clearance        -> recurring maintenance
+# Getting this wrong moves P4/6.1 from 0.33 to 0.37. `reason.classify_one_off`
+# lets the LLM adjudicate wording these patterns do not cover.
+ONE_OFF = re.compile(
+    r"(remediation|repair works|arbitration|dispute|settlement of claim"
+    r"|storm damage|write-?off|restructuring)", re.I)
+RECURRING = re.compile(
+    r"(cleaning|clearance|dredging|inspection|survey|routine|periodic|scheduled)", re.I)
+
+
+def is_one_off(desc):
+    """Explicitly recurring wording wins: a 'clearance' or 'cleaning' job is
+    maintenance even when it appears alongside one-off-sounding words."""
+    if RECURRING.search(desc):
+        return False
+    return bool(ONE_OFF.search(desc))
 
 RU2CAT = {
     "Операционные расходы": "opex", "Капитальные затраты": "capex",
@@ -142,7 +159,7 @@ def build():
                 "counterparty": r["counterparty"], "description": r["description"],
                 "amount": amount, "currency": r["currency"],
                 "category": cat, "decoy_counterparty": is_decoy,
-                "one_off": bool(ONE_OFF.search(r["description"])),
+                "one_off": is_one_off(r["description"]),
                 "excluded": False, "notes": [],
             })
         trail.append(f"ledger: {len(mine)} rows for {sid}; "

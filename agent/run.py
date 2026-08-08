@@ -139,6 +139,34 @@ def main():
     elif n_unknown:
         print(f"(LLM off: {n_unknown} unplaced rows contribute to no covenant)")
 
+    # ---- 3b. one-off adjudication, only where a covenant adds items back ----
+    reclassified_one_off = 0
+    if use_llm:
+        needs = {sid for sid in txns
+                 for cl, c in rules_index["borrowers"][sid]["clauses"].items()
+                 if c.get("metric_shape") == "adjusted_ebitda_margin"}
+        if needs:
+            banner("3b. LLM one-off / recurring adjudication")
+        for sid in sorted(needs):
+            opex = [t for t in txns[sid] if t["category"] == "opex"]
+            got = reason.classify_one_off(
+                [{"txn_id": t["txn_id"], "description": t["description"],
+                  "counterparty": t["counterparty"]} for t in opex])
+            for t in opex:
+                if t["txn_id"] in got and got[t["txn_id"]] != t["one_off"]:
+                    was = t["one_off"]
+                    t["one_off"] = got[t["txn_id"]]
+                    t["notes"].append(f"one-off status set to {t['one_off']} by the "
+                                      f"LLM (rule said {was})")
+                    trail[sid].append(f"llm-one-off: {t['txn_id']} {was} -> "
+                                      f"{t['one_off']}")
+                    reclassified_one_off += 1
+            for t in opex:
+                print(f"  {t['txn_id']:14} one_off={str(t['one_off']):5} "
+                      f"{t['description'][:52]}")
+        if needs:
+            print(f"LLM changed {reclassified_one_off} one-off flag(s)")
+
     # ---- 4. compute, evidence, emit ---------------------------------------
     banner("4. Compute, evidence, emit")
     p3_categorise.build = lambda: (txns, trail, facts)      # reuse the adjusted set
