@@ -6,6 +6,10 @@
         "threshold": "3.00",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "3.00"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -15,6 +19,10 @@
         "threshold": "0.20",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "0.20"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -24,6 +32,10 @@
         "threshold": "700000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "700000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -35,6 +47,10 @@
         "threshold": "600000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "600000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -44,6 +60,10 @@
         "threshold": "4000000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "4000000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -53,6 +73,10 @@
         "threshold": "700000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "700000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -62,6 +86,13 @@
         "threshold": "0.32",
         "unit": "ratio",
         "direction": "min",
+        "ratio_candidates": [
+          "0.32"
+        ],
+        "money_candidates": [
+          "4000000.00",
+          "4000000.00"
+        ],
         "trigger_threshold": "4000000.00",
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -73,6 +104,10 @@
         "threshold": "25000000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "25000000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -82,6 +117,10 @@
         "threshold": "3.00",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "3.00"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -91,6 +130,11 @@
         "threshold": "850000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "850000.00",
+          "500000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -100,6 +144,13 @@
         "threshold": "2.40",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "2.40",
+          "2.40"
+        ],
+        "money_candidates": [
+          "5050000.00"
+        ],
         "trigger_threshold": "5050000.00",
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -111,6 +162,10 @@
         "threshold": "20000000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "20000000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -120,6 +175,11 @@
         "threshold": "1500000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "1500000.00",
+          "250000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -129,6 +189,10 @@
         "threshold": "280000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "280000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -140,6 +204,10 @@
         "threshold": "3.00",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "3.00"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -149,6 +217,10 @@
         "threshold": "7200000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "7200000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -158,6 +230,10 @@
         "threshold": "240000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "240000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -169,6 +245,13 @@
         "threshold": "3.00",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "3.00",
+          "3.00"
+        ],
+        "money_candidates": [
+          "200000.00"
+        ],
         "trigger_threshold": "200000.00",
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -178,6 +261,10 @@
         "threshold": "9400000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "9400000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -187,6 +274,10 @@
         "threshold": "2000000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "2000000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -198,6 +289,10 @@
         "threshold": "2000000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "2000000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -207,6 +302,10 @@
         "threshold": "5750000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "5750000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -216,6 +315,10 @@
         "threshold": "275000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "275000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -227,6 +330,10 @@
         "threshold": "2500000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "2500000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -236,6 +343,10 @@
         "threshold": "7300000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "7300000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -245,6 +356,10 @@
         "threshold": "255000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "255000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -256,6 +371,10 @@
         "threshold": "20000000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "20000000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -265,6 +384,10 @@
         "threshold": "3000000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "3000000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -286,6 +409,11 @@
         "threshold": "250000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "250000.00",
+          "300000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -295,6 +423,10 @@
         "threshold": "0.67",
         "unit": "ratio",
         "direction": "min",
+        "ratio_candidates": [
+          "0.67"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -304,6 +436,10 @@
         "threshold": "400000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "400000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -315,6 +451,10 @@
         "threshold": "250000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "250000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -324,6 +464,10 @@
         "threshold": "8000000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "8000000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -333,6 +477,10 @@
         "threshold": "400000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "400000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -344,6 +492,10 @@
         "threshold": "1.25",
         "unit": "ratio",
         "direction": "min",
+        "ratio_candidates": [
+          "1.25"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -353,6 +505,10 @@
         "threshold": "6800000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "6800000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -362,6 +518,10 @@
         "threshold": "350000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "350000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -373,6 +533,10 @@
         "threshold": "1.50",
         "unit": "ratio",
         "direction": "min",
+        "ratio_candidates": [
+          "1.50"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -382,6 +546,11 @@
         "threshold": "1000000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "1000000.00",
+          "200000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -391,6 +560,10 @@
         "threshold": "400000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "400000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -402,6 +575,10 @@
         "threshold": "3.00",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "3.00"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -411,6 +588,10 @@
         "threshold": "7600000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "7600000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -420,6 +601,10 @@
         "threshold": "200000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "200000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -431,6 +616,13 @@
         "threshold": "3.50",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "3.50",
+          "3.50"
+        ],
+        "money_candidates": [
+          "1800000.00"
+        ],
         "trigger_threshold": "1800000.00",
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -440,6 +632,10 @@
         "threshold": "0.70",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "0.70"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -449,6 +645,10 @@
         "threshold": "6000000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "6000000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -460,6 +660,10 @@
         "threshold": "3.00",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "3.00"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -469,6 +673,10 @@
         "threshold": "2500000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "2500000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -478,6 +686,10 @@
         "threshold": "600000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "600000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -489,6 +701,12 @@
         "threshold": "3.50",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "3.50"
+        ],
+        "money_candidates": [
+          "2000000.00"
+        ],
         "trigger_threshold": "2000000.00",
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -498,6 +716,10 @@
         "threshold": "0.23",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "0.23"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -507,6 +729,10 @@
         "threshold": "450000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "450000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -518,6 +744,10 @@
         "threshold": "1.50",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "1.50"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -537,6 +767,10 @@
         "threshold": "20000000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "20000000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -548,6 +782,10 @@
         "threshold": "600000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "600000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -557,6 +795,10 @@
         "threshold": "0.18",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "0.18"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -566,6 +808,10 @@
         "threshold": "1200000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "1200000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -577,6 +823,10 @@
         "threshold": "3.00",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "3.00"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -586,6 +836,10 @@
         "threshold": "10000000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "10000000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -595,6 +849,10 @@
         "threshold": "450000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "450000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -606,6 +864,10 @@
         "threshold": "400000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "400000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -615,6 +877,10 @@
         "threshold": "2.28",
         "unit": "ratio",
         "direction": "min",
+        "ratio_candidates": [
+          "2.28"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -624,6 +890,10 @@
         "threshold": "350000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "350000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -635,6 +905,10 @@
         "threshold": "3000000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "3000000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -644,6 +918,10 @@
         "threshold": "5150000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "5150000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -653,6 +931,10 @@
         "threshold": "400000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "400000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -664,6 +946,13 @@
         "threshold": "2.50",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "2.50",
+          "2.50"
+        ],
+        "money_candidates": [
+          "500000.00"
+        ],
         "trigger_threshold": "500000.00",
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -673,6 +962,10 @@
         "threshold": "3.00",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "3.00"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -682,6 +975,10 @@
         "threshold": "0.30",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "0.30"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -693,6 +990,10 @@
         "threshold": "300000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "300000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -702,6 +1003,10 @@
         "threshold": "900000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "900000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -711,6 +1016,10 @@
         "threshold": "400000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "400000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -722,6 +1031,11 @@
         "threshold": "3.25",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "3.25",
+          "2.00"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -731,6 +1045,11 @@
         "threshold": "3.00",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "3.00",
+          "1.30"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -740,6 +1059,10 @@
         "threshold": "0.25",
         "unit": "ratio",
         "direction": "min",
+        "ratio_candidates": [
+          "0.25"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -751,6 +1074,10 @@
         "threshold": "700000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "700000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -760,6 +1087,10 @@
         "threshold": "3.40",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "3.40"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -769,6 +1100,10 @@
         "threshold": "2.75",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "2.75"
+        ],
+        "money_candidates": [],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -778,6 +1113,13 @@
         "threshold": "3.40",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "3.40",
+          "3.40"
+        ],
+        "money_candidates": [
+          "800000.00"
+        ],
         "trigger_threshold": "800000.00",
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -789,6 +1131,13 @@
         "threshold": "3.00",
         "unit": "ratio",
         "direction": "max",
+        "ratio_candidates": [
+          "3.00",
+          "3.00"
+        ],
+        "money_candidates": [
+          "2500000.00"
+        ],
         "trigger_threshold": "2500000.00",
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -798,6 +1147,10 @@
         "threshold": "8500000.00",
         "unit": "usd",
         "direction": "min",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "8500000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"
@@ -807,6 +1160,10 @@
         "threshold": "225000.00",
         "unit": "usd",
         "direction": "max",
+        "ratio_candidates": [],
+        "money_candidates": [
+          "225000.00"
+        ],
         "trigger_threshold": null,
         "period_start": "2025-01-01",
         "period_end": "2025-12-31"

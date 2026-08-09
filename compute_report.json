@@ -589,11 +589,11 @@
         "raw": "2632543.20",
         "actual": "2632543.20",
         "status": "BREACH",
-        "comparison": "springing trigger met: financing inflows 18353645.93 > 2500000.00; covenant applies; 2632543.20 > 3.00 (maximum)",
+        "comparison": "springing trigger met: financing inflows 18353645.93 > 2500000.00; covenant applies; 2632543.20 > 2500000.00 (maximum)",
         "evidence": null,
-        "threshold": "3.00",
+        "threshold": "2500000.00",
         "direction": "max",
-        "unit": "ratio",
+        "unit": "usd",
         "covenant_text": "Условный лимит капитальных затрат. Если по состоянию на любую дату в течение периода с 2025-01-01 по 2025-12-31 Коэффициент долговой нагрузки Заёмщика (отношение совокупного долга к EBITDA, определяемое согласно Пункту 5.1) превышает 3.00x, то Mangystau Industrial JSC обязуется не допускать превышения совокупными Капитальными затратами за период величины $2,500,000.00. Пока Коэффициент долговой нагрузки не превышает 3.00x, указанное ограничение Капитальных затрат не применяется."
       },
       "6.2": {
@@ -1460,15 +1460,15 @@
         "covenant_text": "Лимит капитальных затрат на уровне группы. Заёмщик, Turkestan Grain Holding JSC, обязуется не допускать превышения совокупными Капитальными затратами консолидированной Группы за период с 2025-01-01 по 2025-12-31 величины $20,000,000.00. Настоящий ковенант оценивается на уровне консолидированной Группы по данным консолидированной финансовой отчётности Группы, а не на индивидуальном уровне Заёмщика; собственный леджер Заёмщика занижает показатель Группы. Отчётным показателем являются консолидированные Капитальные затраты Группы."
       },
       "6.2": {
-        "metric": "insurance_vs_capex",
+        "metric": "insurance_cover_conditional_on_capex",
         "requires": [
           "insurance",
           "capex"
         ],
-        "raw": "0.1554149243964409539566144237",
-        "actual": "0.16",
+        "raw": "284617.42",
+        "actual": "284617.42",
         "status": "BREACH",
-        "comparison": "0.1554149243964409539566144237 < 1500000.00 (minimum)",
+        "comparison": "284617.42 < 1500000.00 (minimum)",
         "evidence": null,
         "threshold": "1500000.00",
         "direction": "min",
@@ -2172,11 +2172,11 @@
         "raw": "487220.16",
         "actual": "487220.16",
         "status": "BREACH",
-        "comparison": "springing trigger met: financing inflows 16043772.19 > 200000.00; covenant applies; 487220.16 > 3.00 (maximum)",
+        "comparison": "springing trigger met: financing inflows 16043772.19 > 200000.00; covenant applies; 487220.16 > 200000.00 (maximum)",
         "evidence": "TXN-H2-0045",
-        "threshold": "3.00",
+        "threshold": "200000.00",
         "direction": "max",
-        "unit": "ratio",
+        "unit": "usd",
         "covenant_text": "Условный лимит распределений связанным сторонам. Если по состоянию на любую дату в течение периода с 2025-01-01 по 2025-12-31 Коэффициент долговой нагрузки Заёмщика (отношение совокупного долга к EBITDA, определяемое согласно Пункту 5.1) превышает 3.00x, то Kostanay Agro Holding JSC обязуется не осуществлять, не объявлять и не выплачивать Ограниченные платежи или распределения в пользу своих Аффилированных лиц в совокупном размере за период, превышающем $200,000.00. Пока Коэффициент долговой нагрузки не превышает 3.00x, указанное ограничение распределений не применяется."
       },
       "6.2": {
@@ -2959,15 +2959,17 @@
         "covenant_text": "Максимальная капиталоёмкость. Заёмщик, Almaty Cold Chain Logistics JSC, обязуется не допускать превышения отношения Капитальных затрат к Выручке за период с 2025-01-01 по 2025-12-31 значения 0.18x. Для целей настоящего ковенанта Капитальные затраты означают совокупность всех сумм, израсходованных Заёмщиком на приобретение, создание или улучшение основных средств за период, а Выручка означает совокупность всех сумм, признанных выручкой за 5 этот период, в каждом случае определяемых на основании аудированной отчётности Заёмщика и пересчитанных в доллары США по валютным курсам, принятым аудиторами Заёмщика для целей ковенантов."
       },
       "6.3": {
-        "metric": "debt_service_cover",
+        "metric": "fixed_cost_cover_headroom",
         "requires": [
           "revenue",
-          "opex"
+          "opex",
+          "labour",
+          "lease"
         ],
-        "raw": "3106809.62",
-        "actual": "3106809.62",
+        "raw": "2156919.88",
+        "actual": "2156919.88",
         "status": "COMPLIANT",
-        "comparison": "3106809.62 >= 1200000.00 (minimum)",
+        "comparison": "2156919.88 >= 1200000.00 (minimum)",
         "evidence": null,
         "threshold": "1200000.00",
         "direction": "min",
@@ -3095,16 +3097,17 @@
         "covenant_text": "Двойной поддерживающий тест. Случай неисполнения обязательств по настоящему разделу наступает если и только если применительно к периоду с 2025-01-01 по 2025-12-31 одновременно выполняются оба следующих условия: (a) отношение Общего долга к EBITDA Заёмщика, Pavlodar Petrochemical Terminal JSC, превышает 3.25x; и (b) отношение EBITDA к Процентным расходам за этот период составляет менее 2.00x. Во избежание сомнений, невыполнение только одного из указанных условий не образует Случая неисполнения обязательств по настоящему разделу, при этом Заёмщик раскрывает отношение Общего долга к EBITDA в качестве проверяемого показателя. Общий долг означает совокупную основную сумму Финансовой задолженности, привлечённой за период, а EBITDA означает Выручку за вычетом Операционных расходов, в каждом случае определяемые на основании аудированной отчётности Заёмщика и с учётом реклассификаций, принятых аудиторами Заёмщика для целей ковенантов."
       },
       "6.2": {
-        "metric": "cashflow_sweep",
+        "metric": "cashflow_sweep_leverage",
         "requires": [
           "revenue",
-          "opex"
+          "opex",
+          "financing_inflow"
         ],
-        "raw": "3232404.83",
-        "actual": "3232404.83",
+        "raw": "3.053713538102837199386315730",
+        "actual": "3.05",
         "status": "BREACH",
-        "comparison": "3232404.83 > 3.00 (maximum)",
-        "evidence": null,
+        "comparison": "3.053713538102837199386315730 > 3.00 (maximum)",
+        "evidence": "TXN-J2-0039",
         "threshold": "3.00",
         "direction": "max",
         "unit": "ratio",
@@ -3526,11 +3529,11 @@
         "raw": "1643165.84",
         "actual": "1643165.84",
         "status": "BREACH",
-        "comparison": "springing trigger met: financing inflows 9738799.03 > 500000.00; covenant applies; 1643165.84 > 2.50 (maximum)",
+        "comparison": "springing trigger met: financing inflows 9738799.03 > 500000.00; covenant applies; 1643165.84 > 500000.00 (maximum)",
         "evidence": null,
-        "threshold": "2.50",
+        "threshold": "500000.00",
         "direction": "max",
-        "unit": "ratio",
+        "unit": "usd",
         "covenant_text": "Springing Limitation on Transfers to Unrestricted Subsidiaries. The Borrower, Altai Metals Holding B.V., shall not, at any time during the period from 2025-01-01 to 2025-12-31 when its Net Leverage Ratio exceeds 2.50x, sell, transfer, contribute or otherwise dispose of any asset constituting Collateral to any Unrestricted Subsidiary where the aggregate value of all such transfers exceeds $500,000.00. For purposes of this covenant, an Unrestricted Subsidiary means any subsidiary designated as unrestricted and accordingly falling outside the collateral perimeter of this Agreement, as recorded in the Borrower's customer due-diligence records; a transfer to a Restricted Subsidiary shall not be counted. This restriction is suspended at any time when the Net Leverage Ratio does not exceed 2.50x, and for the avoidance of doubt the restriction may be in effect notwithstanding compliance with the maximum Net Leverage Ratio covenant elsewhere in this Article."
       },
       "5.2": {
@@ -3661,11 +3664,11 @@
         "raw": "2143796.5896",
         "actual": "2143796.59",
         "status": "BREACH",
-        "comparison": "springing trigger met: financing inflows 8478951.48 > 1800000.00; covenant applies; 2143796.5896 > 3.50 (maximum)",
+        "comparison": "springing trigger met: financing inflows 8478951.48 > 1800000.00; covenant applies; 2143796.5896 > 1800000.00 (maximum)",
         "evidence": null,
-        "threshold": "3.50",
+        "threshold": "1800000.00",
         "direction": "max",
-        "unit": "ratio",
+        "unit": "usd",
         "covenant_text": "Условный лимит капитальных затрат (по долговой нагрузке Группы). Заёмщик, Altyn Copper Concentrator JSC, обязуется не допускать превышения Капитальными затратами за период с 2025-01-01 по 2025-12-31 суммы $1,800,000.00 в любой момент, когда Консолидированный коэффициент долговой нагрузки Группы превышает 3.50x. Для целей настоящего ковенанта Консолидированный коэффициент долговой нагрузки Группы означает консолидированный Общий долг Группы, делённый на консолидированную EBITDA Группы, в каждом случае определяемые по аудированной консолидированной отчётности конечной материнской компании Заёмщика, а не по собственной отчётности Заёмщика; Общий долг включает все процентные заимствования и обязательства по финансовой аренде, как краткосрочные, так и долгосрочные. Настоящее ограничение приостанавливается в любой момент, когда указанный коэффициент не превышает 3.50x."
       },
       "6.2": {
@@ -4647,11 +4650,11 @@
         "raw": "5103929.634690433547667102427",
         "actual": "5103929.63",
         "status": "BREACH",
-        "comparison": "springing trigger met: financing inflows 24880415.63 > 5050000.00; covenant applies; 5103929.634690433547667102427 > 2.40 (maximum)",
+        "comparison": "springing trigger met: financing inflows 24880415.63 > 5050000.00; covenant applies; 5103929.634690433547667102427 > 5050000.00 (maximum)",
         "evidence": null,
-        "threshold": "2.40",
+        "threshold": "5050000.00",
         "direction": "max",
-        "unit": "ratio",
+        "unit": "usd",
         "covenant_text": "Условный лимит капитальных затрат. Если по состоянию на любую дату в течение периода с 2025-01-01 по 2025-12-31 Коэффициент долговой нагрузки Заёмщика (отношение совокупного долга к EBITDA, определяемое согласно Пункту 5.1) превышает 2.40x, то Aktobe Polymer Industries JSC обязуется не допускать превышения совокупными Капитальными затратами за период величины $5,050,000.00. Пока Коэффициент долговой нагрузки не превышает 2.40x, указанное ограничение Капитальных затрат не применяется."
       }
     }
@@ -4861,11 +4864,11 @@
         "raw": "918447.23",
         "actual": "918447.23",
         "status": "BREACH",
-        "comparison": "springing trigger met: financing inflows 23140662.85 > 800000.00; covenant applies; 918447.23 > 3.40 (maximum)",
+        "comparison": "springing trigger met: financing inflows 23140662.85 > 800000.00; covenant applies; 918447.23 > 800000.00 (maximum)",
         "evidence": "TXN-X3-0034",
-        "threshold": "3.40",
+        "threshold": "800000.00",
         "direction": "max",
-        "unit": "ratio",
+        "unit": "usd",
         "covenant_text": "Условный лимит распределений (нагрузка Группы). Если по состоянию на любую дату в течение периода с 2025-01-01 по 2025-12-31 Коэффициент долговой нагрузки Группы превысит 3.40x, то Ekibastuz Power Assets JSC обязуется не осуществлять, не объявлять и не выплачивать Ограниченные платежи и распределения в пользу своих аффилированных лиц в совокупном размере за период, превышающем $800,000.00. Для целей настоящего ковенанта Коэффициент долговой нагрузки Группы означает совокупную процентную задолженность Группы, делённую на прибыль Группы до вычета процентов, налогов и амортизации, в каждом случае определяемые по данным консолидированной финансовой отчётности конечной материнской компании Группы за соответствующий период, а не по данным собственной отчётности Заёмщика. До тех пор пока Коэффициент долговой нагрузки Группы не превышает 3.40x, изложенное ограничение распределений не применяется."
       }
     }

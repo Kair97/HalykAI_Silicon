@@ -311,10 +311,16 @@ LIBRARY = [
      ("lease",),
      lambda x, f, s: total(x, "lease") + total(x, "utilities")),
 
+    ("fixed_cost_cover_headroom",
+     r"Минимальный запас покрытия постоянных расходов",
+     ("revenue", "opex", "labour", "lease"),
+     lambda x, f, s: total(x, "revenue") - (total(x, "opex") + total(x, "labour")
+                                            + total(x, "lease"))),
+
     ("debt_service_cover",
      r"Минимальный коэффициент покрытия обслуживания долга"
      r"|Минимальный коэффициент покрытия постоянных платежей"
-     r"|Minimum Fixed Overhead Cover|Минимальный запас покрытия постоянных расходов",
+     r"|Minimum Fixed Overhead Cover",
      ("revenue", "opex"),
      lambda x, f, s: div(ebitda(x), total(x, "interest") + total(x, "lease")
                          or Decimal(1))),
@@ -329,10 +335,10 @@ LIBRARY = [
      ("taxes", "revenue", "opex"),
      lambda x, f, s: div(total(x, "taxes"), ebitda(x))),
 
-    ("insurance_vs_capex",
+    ("insurance_cover_conditional_on_capex",
      r"Insurance Cover Linked to Capital Expenditure",
      ("insurance", "capex"),
-     lambda x, f, s: div(total(x, "insurance"), total(x, "capex"))),
+     lambda x, f, s: total(x, "insurance")),
 
     ("marketing_quarterly_cap",
      r"Квартальный лимит маркетинговых расходов",
@@ -354,10 +360,10 @@ LIBRARY = [
      ("revenue", "opex", "financing_inflow"),
      lambda x, f, s: div(net_debt(x), adj_ebitda(x))),
 
-    ("cashflow_sweep",
+    ("cashflow_sweep_leverage",
      r"Условие досрочного погашения за счёт денежного потока",
-     ("revenue", "opex"),
-     lambda x, f, s: ebitda(x) - total(x, "capex")),
+     ("revenue", "opex", "financing_inflow"),
+     lambda x, f, s: div(net_debt(x), ebitda(x))),
 
     # category-parameterised: the constrained line is read from the «...» quote
     ("category_revenue_floor",
@@ -370,6 +376,33 @@ LIBRARY = [
      lambda s: (quoted_category(s, "capex"),),
      lambda x, f, s: total(x, quoted_category(s, "capex", x))),
 ]
+
+
+# Which formulas produce a RATIO (as opposed to a money amount)? Used to pick
+# the right threshold when a clause quotes both a trigger ratio and a cash limit.
+RETURNS_RATIO = {
+    "interest_coverage", "capital_intensity", "sources_cover_applications",
+    "springing_leverage", "adjusted_ebitda_margin", "group_capex_to_ebitda",
+    "related_party_share_of_opex", "revenue_cover_of_payroll_and_utilities",
+    "tax_and_utility_burden", "unrestricted_subsidiary_transfers",
+    "insurance_cover_of_premises_costs", "related_party_ratio_of_revenue",
+    "debt_leverage", "adjusted_debt_leverage_with_guarantees",
+    "leverage_capped_addbacks", "max_quarterly_revenue_concentration",
+    "consulting_to_ebitda", "capex_to_ebitda", "conditional_capital_intensity",
+    "ebitda_margin", "fiscal_burden", "insurance_vs_capex",
+    "dual_maintenance_test", "debt_service_cover", "cashflow_sweep_leverage",
+}
+
+
+def pick_threshold(name, spec):
+    """Choose the threshold whose UNIT matches what this formula returns."""
+    want_ratio = name in RETURNS_RATIO
+    ratios = spec.get("ratio_candidates") or []
+    monies = spec.get("money_candidates") or []
+    chosen = (ratios or monies) if want_ratio else (monies or ratios)
+    if not chosen:
+        return spec.get("threshold"), spec.get("unit", "usd")
+    return chosen[0], ("ratio" if chosen is ratios else "usd")
 
 
 class UnmatchedCovenant(Exception):

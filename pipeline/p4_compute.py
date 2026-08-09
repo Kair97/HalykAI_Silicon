@@ -162,6 +162,11 @@ def main(strict=True):
                 assert exp_fn(txns, facts) == value and set(exp_req) == set(requires), (
                     f"{sid}/{clause}: the wording-driven library disagrees with the hand "
                     f"transcription in EXPECTED -- one of the two is wrong")
+            # Pick the threshold whose unit matches what the formula returns:
+            # conditional covenants quote a trigger ratio AND a cash limit.
+            if desc != "UNMATCHED COVENANT WORDING":
+                thr, unit = metrics.pick_threshold(desc, spec)
+                spec = dict(spec, threshold=thr, unit=unit)
             issues += checks.check_metric_inputs(sid, clause, requires, txns, facts, value)
             st, cmp = status_of(value, spec, txns, facts)
             ev = evidence_for(sid, clause, txns, facts, st)

@@ -147,7 +147,7 @@
       },
       "6.2": {
         "status": "BREACH",
-        "actual": 0.16,
+        "actual": 284617.42,
         "evidence_txn_id": null
       },
       "6.3": {
@@ -305,7 +305,7 @@
       },
       "6.3": {
         "status": "COMPLIANT",
-        "actual": 3106809.62,
+        "actual": 2156919.88,
         "evidence_txn_id": null
       }
     },
@@ -317,8 +317,8 @@
       },
       "6.2": {
         "status": "BREACH",
-        "actual": 3232404.83,
-        "evidence_txn_id": null
+        "actual": 3.05,
+        "evidence_txn_id": "TXN-J2-0039"
       },
       "6.3": {
         "status": "COMPLIANT",

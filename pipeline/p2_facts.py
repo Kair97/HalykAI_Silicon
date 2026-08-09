@@ -92,6 +92,11 @@ def parse_covenants(text, clauses=None):
             "threshold": str(ratio[0] if ratio else money[0]),
             "unit": "ratio" if ratio else "usd",
             "direction": "min" if is_min else "max",
+            # A conditional covenant states a TRIGGER ratio and a separate money
+            # LIMIT (or vice versa). Keep both; p4_compute picks the one whose
+            # unit matches the metric, instead of blindly preferring the ratio.
+            "ratio_candidates": [str(r) for r in ratio],
+            "money_candidates": [str(m) for m in money],
             "trigger_threshold": str(money[0]) if (ratio and money) else None,
             "period_start": "2025-01-01",
             "period_end": "2025-12-31",
