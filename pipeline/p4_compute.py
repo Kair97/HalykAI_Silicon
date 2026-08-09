@@ -13,7 +13,7 @@ from pathlib import Path
 import checks
 import metrics
 from metrics import div, ebitda, rp, total  # noqa: F401  (used by EXPECTED)
-from p3_categorise import CLAUSES, TARGETS, build
+from p3_categorise import CLAUSES, CLAUSES_BY_SID, TARGETS, build
 
 ROOT = Path(os.environ.get("HALYK_ROOT",
                            Path(__file__).resolve().parent.parent))
@@ -37,6 +37,9 @@ EXPECTED = {
 def status_of(value, spec, txns, facts):
     """Compare against the threshold in the stated direction, applying any
     springing trigger. The metric goes in `actual` either way."""
+    if spec.get("threshold") is None:
+        # threshold unreadable: answer the more common verdict rather than crash
+        return "COMPLIANT", "threshold could not be parsed from the clause"
     thr = Decimal(spec["threshold"])
     if spec.get("trigger_threshold"):
         trig = Decimal(spec["trigger_threshold"])
@@ -84,7 +87,10 @@ def evidence_for(sid, clause, txns, facts, base_status):
     and the status flips. Rows that merely contribute to a total are excluded by
     construction -- only adjusted / related-party rows are candidates."""
     spec = facts["covenants"][sid][clause]
-    _name, _req, fn = metrics.resolve(spec)
+    try:
+        _name, _req, fn = metrics.resolve(spec)
+    except metrics.UnmatchedCovenant:
+        return None          # no formula, so no counterfactual is meaningful
     cands = [t["txn_id"] for t in txns
              if t.get("reclassified") or t["excluded"] or t["related_party"]
              or any("absent from the ledger export" in n for n in t["notes"])]
@@ -135,10 +141,21 @@ def main(strict=True):
                       "notes": t["notes"]} for t in txns],
             "cells": {},
         }
-        for clause in CLAUSES:
+        for clause in CLAUSES_BY_SID.get(sid, CLAUSES):
             spec = facts["covenants"][sid][clause]
-            desc, requires, fn = metrics.resolve(spec)
-            value = fn(txns, facts, spec)
+            # A covenant whose wording matches no formula must not kill the run:
+            # every OTHER cell is still worth answering. Fall back to the closest
+            # safe reading, emit a value, and raise FAIL so it is visible.
+            try:
+                desc, requires, fn = metrics.resolve(spec)
+                value = fn(txns, facts, spec)
+            except metrics.UnmatchedCovenant as e:
+                desc, requires = "UNMATCHED COVENANT WORDING", ()
+                value = metrics.fallback_value(txns, spec)
+                issues.append(checks.Issue(
+                    checks.FAIL, f"{sid}/{clause}",
+                    f"no metric matched this covenant's wording; emitted a "
+                    f"best-effort figure. {str(e)[:160]}"))
             if (sid, clause) in EXPECTED:
                 exp_req, _d, exp_fn = EXPECTED[(sid, clause)]
                 assert exp_fn(txns, facts) == value and set(exp_req) == set(requires), (

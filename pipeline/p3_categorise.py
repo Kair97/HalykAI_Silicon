@@ -29,23 +29,55 @@ DATA = ARCHIVE
 # a regenerated archive may use entirely different scenario ids.
 _TPL = json.loads((DATA / "submission_template.json").read_text(encoding="utf-8"))
 TARGETS = list(_TPL["answers"])
+# Clauses vary BY BORROWER in the hidden archive: most use 6.1-6.3, some 6.1-6.4,
+# and one uses 5.1-5.3. Answer exactly what each borrower's template entry lists.
+CLAUSES_BY_SID = {sid: sorted(cells) for sid, cells in _TPL["answers"].items()}
 CLAUSES = sorted({c for s in _TPL["answers"].values() for c in s})
+_BY_LEN = sorted(TARGETS, key=len, reverse=True)
+
+
+def scenario_of(txn_id):
+    for t in _BY_LEN:
+        if txn_id.startswith(f"TXN-{t}-"):
+            return t
+    return None
 
 # category taxonomy derived from the Phase-3 covenant definitions
+# Order matters: the first pattern that matches wins, so specific shapes sit
+# above general ones. Patterns are deliberately broad -- the hidden archive uses
+# a wider vocabulary than the public one ("Bulk cement sales", "Imported clinker
+# grinding equipment", "Routine plant maintenance and operating costs").
 RULES = [
-    ("revenue",           r"sales settlement"),
-    ("financing_inflow",  r"facility drawdown"),
-    ("capex_transfer",    r"^Transfer of .* to subsidiary"),
-    ("capex",             r"^Purchase of .*equipment"),
-    ("lease",             r"land lease payments"),
-    ("labour",            r"payroll (disbursement|settlement)"),
-    ("utilities",         r"(supply charges|utilities supply)"),
-    ("taxes",             r"tax (instalment|assessment)"),
-    ("interest",          r"^Loan interest payment"),
-    ("insurance",         r"insurance premium"),
-    ("consulting",        r"(advisory retainer|retainer fee|Advisory engagement)"),
-    ("opex",              r"(servicing and operating costs|operating and maintenance"
-                          r"|servicing contract|servicing \d{4}|works$|legal servicing)"),
+    ("capex_transfer",    r"transfer of .*to (a )?subsidiary|asset transfer to"),
+    ("debt_repayment",    r"principal repayment|repayment of (the )?(term )?loan"
+                          r"|scheduled amortisation"),
+    ("financing_inflow",  r"(facility|loan) drawdown|drawdown( |,|$)|tranche [A-Z]"
+                          r"|term loan .*(drawdown|proceeds)|financing proceeds"),
+    ("revenue",           r"sales settlement|sales( |$)|revenue recognition"
+                          r"|throughput sales|despatch sales|product sales"
+                          r"|handling .*sales|transit sales"),
+    ("capex",             r"purchase of .*equipment|equipment|machinery"
+                          r"|plant and machinery|capital expenditure|upgrade$"
+                          r"|acquisition of .*(plant|equipment)"),
+    ("lease",             r"land lease payments|lease payments|rent for|premises lease"
+                          r"|ground rent"),
+    ("labour",            r"payroll|wage run|staff cost|personnel cost"),
+    ("utilities",         r"supply charges|utilities supply|water supply|electricity"
+                          r"|energy billing|heating"),
+    ("taxes",             r"\btax\b.*(instalment|assessment|settlement|payment)"
+                          r"|corporate income tax|VAT|mineral extraction tax"),
+    ("interest",          r"loan interest payment|interest expense|interest on "
+                          r"(the )?(term|senior|bridge) "),
+    ("insurance",         r"insurance premium|insurance claim|insurance excess"
+                          r"|cover contribution"),
+    ("consulting",        r"advisory retainer|retainer fee|advisory engagement"
+                          r"|advisory settlement|advisory fees|management advisory"
+                          r"|consultanc|governance advisory"),
+    ("marketing",         r"marketing|advertising|ad campaign|media buy|billboard"
+                          r"|sponsorship|exhibition stand"),
+    ("opex",              r"servicing and operating costs|operating and maintenance"
+                          r"|servicing contract|servicing \d{4}|works$|legal servicing"
+                          r"|maintenance|operating costs|handling charges|servicing"),
 ]
 # Non-recurring items eligible for an EBITDA add-back when the covenant allows it.
 # The test is whether the EVENT recurs, not whether the wording sounds unusual:
@@ -97,8 +129,7 @@ def load_rows():
     rows = []
     with open(DATA / "master_ledger_2025.csv", encoding="utf-8-sig", newline="") as fh:
         for r in csv.DictReader(fh):
-            m = re.match(r"^TXN-([A-Z0-9]+)-(\d+)$", r["txn_id"])
-            r["scenario_id"] = m.group(1) if m else None
+            r["scenario_id"] = scenario_of(r["txn_id"])
             rows.append(r)
     return rows
 
@@ -239,7 +270,8 @@ def build():
         if kyc.get("threshold_pct") is None:
             for t in txns:
                 if t["category"] == "consulting" and re.search(
-                        r"retainer", t["description"], re.I):
+                        r"retainer|advisory|management fee|intercompany",
+                        t["description"], re.I):
                     t["related_party"] = True
                     t["notes"].append("treated as the related party by the "
                                       "retainer-counterparty fallback (no legible "

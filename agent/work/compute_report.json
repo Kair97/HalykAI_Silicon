@@ -1,0 +1,1851 @@
+{
+  "P1": {
+    "trail": [
+      "ledger: 56 rows for P1; 50 decoy rows dropped; 6 covenant-relevant rows retained",
+      "cut-off: TXN-P1-0045 excluded from the period",
+      "kyc: related-party threshold 20.0% (read from the dossier)",
+      "kyc: Aktau Holdings LLP 34.500% -> RELATED",
+      "kyc: Kaspi Marine Engineering LLP 18.700% -> not related",
+      "kyc: Ural Crane Works LLP 6.200% -> not related"
+    ],
+    "rows": [
+      {
+        "txn_id": "TXN-P1-0014",
+        "date": "2025-03-05",
+        "counterparty": "Aktau Terminal Properties LLP",
+        "description": "Terminal land lease payments 2025",
+        "amount": "-918443.27",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "lease",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P1-0010",
+        "date": "2025-05-21",
+        "counterparty": "Ural Crane Works LLP",
+        "description": "Purchase of quayside crane equipment",
+        "amount": "-1842006.44",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "capex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P1-0042",
+        "date": "2025-06-17",
+        "counterparty": "Mangystau Berth Services LLP",
+        "description": "Berth servicing and operating costs 2025",
+        "amount": "-3104882.61",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "opex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P1-0031",
+        "date": "2025-07-09",
+        "counterparty": "Aktau Holdings L.L.P.",
+        "description": "Management advisory retainer",
+        "amount": "-283664.18",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "consulting",
+        "related_party": true,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P1-0045",
+        "date": "2025-08-12",
+        "counterparty": "Kaspi Marine Engineering LLP",
+        "description": "Quay wall inspection and survey servicing contract",
+        "amount": "-612884.19",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "opex",
+        "related_party": false,
+        "excluded": true,
+        "one_off": false,
+        "reclassified": false,
+        "notes": [
+          "excluded from the 2025 covenant period by the auditor's cut-off note"
+        ]
+      },
+      {
+        "txn_id": "TXN-P1-0030",
+        "date": "2025-09-26",
+        "counterparty": "Caspian Shipping Lines JSC",
+        "description": "Port handling and stevedoring sales settlement 2025",
+        "amount": "6842117.53",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "revenue",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      }
+    ],
+    "cells": {
+      "6.1": {
+        "metric": "capital_intensity",
+        "requires": [
+          "capex",
+          "opex",
+          "lease"
+        ],
+        "raw": "0.4578317777231607199563958761",
+        "actual": "0.46",
+        "status": "BREACH",
+        "comparison": "0.4578317777231607199563958761 > 0.42 (maximum)",
+        "evidence": "TXN-P1-0045",
+        "threshold": "0.42",
+        "direction": "max",
+        "unit": "ratio",
+        "covenant_text": "Maximum Capital Intensity Ratio. Заёмщик, Aktau Port Services JSC, обязуется не допускать, чтобы коэффициент капиталоёмкости за период с 2025-01-01 по 2025-12-31 превышал 0.42x. Коэффициент капиталоёмкости означает отношение совокупных капитальных затрат за период к сумме операционных расходов и арендных платежей за тот же период. Суммы, переклассифицированные аудиторами Заёмщика, учитываются по переклассифицированной статье как в числителе, так и в знаменателе."
+      },
+      "6.2": {
+        "metric": "category_revenue_floor",
+        "requires": [
+          "revenue"
+        ],
+        "raw": "6842117.53",
+        "actual": "6842117.53",
+        "status": "BREACH",
+        "comparison": "6842117.53 < 7100000.00 (minimum)",
+        "evidence": null,
+        "threshold": "7100000.00",
+        "direction": "min",
+        "unit": "usd",
+        "covenant_text": "Минимальная выручка по категории. Для целей настоящей статьи под поступлениями по статье «Выручка» понимаются суммы, отнесённые к данной статье в аудированной финансовой отчётности Заёмщика с учётом переквалификаций, произведённых аудиторами Заёмщика для целей соблюдения ковенантов. Aktau Port Services JSC обязуется поддерживать совокупный объём таких поступлений за период с 2025-01-01 по 2025-12-31 на уровне не менее $7,100,000.00."
+      },
+      "6.3": {
+        "metric": "related_party_cap",
+        "requires": [
+          "@related"
+        ],
+        "raw": "283664.18",
+        "actual": "283664.18",
+        "status": "COMPLIANT",
+        "comparison": "283664.18 <= 450000.00 (maximum)",
+        "evidence": null,
+        "threshold": "450000.00",
+        "direction": "max",
+        "unit": "usd",
+        "covenant_text": "Максимальные платежи связанным сторонам. Заёмщик, Aktau Port Services JSC, обязуется не допускать, чтобы совокупный объём платежей в пользу связанных сторон за период с 2025-01-01 по 2025-12-31 превышал $450,000.00. Связанные стороны определяются в соответствии с МСФО (IAS) 24 и сведениями, раскрытыми в досье «Знай своего клиента» (KYC)."
+      }
+    }
+  },
+  "P2": {
+    "trail": [
+      "ledger: 56 rows for P2; 50 decoy rows dropped; 6 covenant-relevant rows retained",
+      "reclass: TXN-P2-0040 consulting -> opex ($1104663.28, Tien Shan Advisory Bureau)",
+      "!! no KYC ownership table: related parties cannot be established from documents",
+      "kyc-fallback: TXN-P2-0012 (Zhetysu Capital Partners LLP) treated as related party"
+    ],
+    "rows": [
+      {
+        "txn_id": "TXN-P2-0028",
+        "date": "2025-02-19",
+        "counterparty": "Development Bank of Kazakhstan JSC",
+        "description": "Term loan facility drawdown for cold store expansion",
+        "amount": "4882117.46",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "financing_inflow",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P2-0036",
+        "date": "2025-04-23",
+        "counterparty": "Ural Refrigeration Works LLP",
+        "description": "Purchase of blast freezer equipment",
+        "amount": "-3204881.55",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "capex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P2-0009",
+        "date": "2025-06-30",
+        "counterparty": "Almaty Chill Logistics LLP",
+        "description": "Cold store servicing and operating costs 2025",
+        "amount": "-5918004.37",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "opex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P2-0040",
+        "date": "2025-07-15",
+        "counterparty": "Tien Shan Advisory Bureau",
+        "description": "Advisory engagement on depot operations",
+        "amount": "-1104663.28",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "opex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": true,
+        "notes": [
+          "reclassified Консультационные услуги -> Операционные расходы by the auditor"
+        ]
+      },
+      {
+        "txn_id": "TXN-P2-0012",
+        "date": "2025-08-27",
+        "counterparty": "Zhetysu Capital Partners LLP",
+        "description": "Management advisory retainer",
+        "amount": "-271884.36",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "consulting",
+        "related_party": true,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": [
+          "treated as the related party by the retainer-counterparty fallback (no legible ownership table for this borrower)"
+        ]
+      },
+      {
+        "txn_id": "TXN-P2-0034",
+        "date": "2025-10-08",
+        "counterparty": "Magnum Distribution JSC",
+        "description": "Refrigerated distribution sales settlement 2025",
+        "amount": "7214663.82",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "revenue",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      }
+    ],
+    "cells": {
+      "6.1": {
+        "metric": "sources_cover_applications",
+        "requires": [
+          "revenue",
+          "financing_inflow",
+          "opex",
+          "capex"
+        ],
+        "raw": "1.182764418283121043309183005",
+        "actual": "1.18",
+        "status": "BREACH",
+        "comparison": "1.182764418283121043309183005 < 1.20 (minimum)",
+        "evidence": "TXN-P2-0040",
+        "threshold": "1.20",
+        "direction": "min",
+        "unit": "ratio",
+        "covenant_text": "Minimum Cover of Applications by Sources. Отношение суммы выручки и поступлений по финансированию Заёмщика (Almaty Cold Chain JSC) к сумме операционных и капитальных затрат за период с 2025-01-01 по 2025-12-31 должно составлять не менее 1.20x."
+      },
+      "6.2": {
+        "metric": "category_expense_cap",
+        "requires": [
+          "capex"
+        ],
+        "raw": "3204881.55",
+        "actual": "3204881.55",
+        "status": "BREACH",
+        "comparison": "3204881.55 > 3000000.00 (maximum)",
+        "evidence": null,
+        "threshold": "3000000.00",
+        "direction": "max",
+        "unit": "usd",
+        "covenant_text": "Максимальные расходы по категории. Для целей настоящего ковенанта под расходами по статье «Капитальные затраты» понимаются суммы, отнесённые к данной статье в аудированной финансовой отчётности Заёмщика, включая суммы, переквалифицированные в неё независимым аудитором Заёмщика, и за вычетом сумм, переквалифицированных аудитором из данной статьи. Almaty Cold Chain JSC не вправе допускать, чтобы такие совокупные расходы за период с 2025-01-01 по 2025-12-31 превысили $3,000,000.00."
+      },
+      "6.3": {
+        "metric": "related_party_ratio_of_revenue",
+        "requires": [
+          "@related",
+          "revenue"
+        ],
+        "raw": "0.03768496589491816404551473613",
+        "actual": "0.04",
+        "status": "BREACH",
+        "comparison": "0.03768496589491816404551473613 > 0.03 (maximum)",
+        "evidence": "TXN-P2-0012",
+        "threshold": "0.03",
+        "direction": "max",
+        "unit": "ratio",
+        "covenant_text": "Maximum Related-Party Payments as a Proportion of Revenue. Заёмщик, Almaty Cold Chain JSC, обязуется не допускать, чтобы совокупные Ограниченные платежи в пользу аффилированных лиц за период с 2025-01-01 по 2025-12-31 превышали 0.03x от выручки за тот же период. Отнесение контрагента к аффилированным лицам определяется в соответствии с политикой в отношении связанных сторон, зафиксированной в досье Заёмщика по идентификации клиента, а не назначением платежа. 5"
+      }
+    }
+  },
+  "P3": {
+    "trail": [
+      "ledger: 55 rows for P3; 50 decoy rows dropped; 5 covenant-relevant rows retained",
+      "fx: implied USD/EUR 1.16 from the disclosed settlement pair 72146.75 EUR -> $83690.23",
+      "kyc: related-party threshold 25.0% (read from the dossier)",
+      "kyc: Turan Capital\" LLP 28.800% -> RELATED",
+      "kyc: KazMunayGas Refining JSC 4.100% -> not related",
+      "kyc: Shymkent Plant Services LLP 22.900% -> not related"
+    ],
+    "rows": [
+      {
+        "txn_id": "TXN-P3-0002",
+        "date": "2025-03-18",
+        "counterparty": "Development Bank of Kazakhstan JSC",
+        "description": "Term loan facility drawdown for turnaround works",
+        "amount": "5442118.93",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "financing_inflow",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P3-0024",
+        "date": "2025-05-07",
+        "counterparty": "Rheinland Katalyse Service GmbH",
+        "description": "Catalyst regeneration servicing contract",
+        "amount": "-612884.25",
+        "amount_usd": "-710945.7300",
+        "currency": "EUR",
+        "category": "opex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": [
+          "converted at the disclosed settlement rate 1.16"
+        ]
+      },
+      {
+        "txn_id": "TXN-P3-0028",
+        "date": "2025-06-24",
+        "counterparty": "Shymkent Plant Services LLP",
+        "description": "Plant servicing and operating costs 2025",
+        "amount": "-4218006.51",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "opex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P3-0001",
+        "date": "2025-08-05",
+        "counterparty": "Turan Capital LLP",
+        "description": "Management advisory retainer",
+        "amount": "-264117.82",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "consulting",
+        "related_party": true,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P3-0010",
+        "date": "2025-09-11",
+        "counterparty": "KazMunayGas Refining JSC",
+        "description": "Refinery turnaround services sales settlement 2025",
+        "amount": "8104772.36",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "revenue",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      }
+    ],
+    "cells": {
+      "6.1": {
+        "metric": "springing_leverage",
+        "requires": [
+          "financing_inflow",
+          "revenue",
+          "opex"
+        ],
+        "raw": "1.713610571243562749391486316",
+        "actual": "1.71",
+        "status": "BREACH",
+        "comparison": "springing trigger met: financing inflows 5442118.93 > 4000000.00; covenant applies; 1.713610571243562749391486316 > 1.70 (maximum)",
+        "evidence": null,
+        "threshold": "1.70",
+        "direction": "max",
+        "unit": "ratio",
+        "covenant_text": "Springing Drawdown Leverage Test. Ограничение отношения поступлений по финансированию к EBITDA величиной 1.70x за период с 2025-01-01 по 2025-12-31 применяется к Заёмщику (Shymkent Refinery Services JSC) только при условии, что совокупные поступления по финансированию превышают $4,000,000.00. Суммы в иностранной валюте пересчитываются по курсу, раскрытому аудитором."
+      },
+      "6.2": {
+        "metric": "category_revenue_floor",
+        "requires": [
+          "revenue"
+        ],
+        "raw": "8104772.36",
+        "actual": "8104772.36",
+        "status": "COMPLIANT",
+        "comparison": "8104772.36 >= 6500000.00 (minimum)",
+        "evidence": null,
+        "threshold": "6500000.00",
+        "direction": "min",
+        "unit": "usd",
+        "covenant_text": "Минимальная выручка по категории. Минимальный объём по статье «Выручка». Условием предоставления заёмных средств является то, что совокупные поступления Shymkent Refinery Services JSC по указанной статье за период с 2025-01-01 по 2025-12-31 будут не ниже $6,500,000.00. Суммы, переквалифицированные независимым аудитором Заёмщика в состав финансовых или иных неоперационных статей, в счёт исполнения настоящего ковенанта не засчитываются независимо от их первоначального отражения в учёте."
+      },
+      "6.3": {
+        "metric": "related_party_cap",
+        "requires": [
+          "@related"
+        ],
+        "raw": "264117.82",
+        "actual": "264117.82",
+        "status": "COMPLIANT",
+        "comparison": "264117.82 <= 400000.00 (maximum)",
+        "evidence": null,
+        "threshold": "400000.00",
+        "direction": "max",
+        "unit": "usd",
+        "covenant_text": "Максимальные платежи связанным сторонам. Для целей настоящей статьи под связанной стороной понимается любое лицо, признанное связанной стороной Заёмщика по данным досье «Знай своего клиента» (KYC), независимо от назначения платежа, указанного в бухгалтерском учёте Заёмщика. Shymkent Refinery Services JSC обязуется не допускать, чтобы совокупный размер Ограниченных платежей в пользу связанных сторон за период с 2025-01-01 по 2025-12-31 превышал $400,000.00."
+      }
+    }
+  },
+  "P4": {
+    "trail": [
+      "ledger: 57 rows for P4; 50 decoy rows dropped; 7 covenant-relevant rows retained",
+      "kyc: related-party threshold 30.0% (read from the dossier)",
+      "kyc: Aktobe Elevator Services LLP 28.600% -> not related",
+      "kyc: Aral Capital Partners, LLP 33.400% -> RELATED",
+      "kyc: Ural Conveyor Works LLP 7.300% -> not related"
+    ],
+    "rows": [
+      {
+        "txn_id": "TXN-P4-0053",
+        "date": "2025-03-19",
+        "counterparty": "Ural Conveyor Works LLP",
+        "description": "Purchase of grain conveyor equipment",
+        "amount": "-1652704.31",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "capex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P4-0054",
+        "date": "2025-04-08",
+        "counterparty": "Aktobe Elevator Services LLP",
+        "description": "Terminal servicing and operating costs 2025",
+        "amount": "-4431662.19",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "opex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P4-0025",
+        "date": "2025-06-02",
+        "counterparty": "Ilek Restoration Works LLP",
+        "description": "Flood remediation and silo repair works",
+        "amount": "-481247.63",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "opex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": true,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P4-0001",
+        "date": "2025-07-22",
+        "counterparty": "Zhaiyk Dredging LLP",
+        "description": "Berth silt cleaning and clearance works",
+        "amount": "-251338.94",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "opex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P4-0023",
+        "date": "2025-09-03",
+        "counterparty": "Aral Freight Arbitration Bureau",
+        "description": "Demurrage dispute arbitration and legal servicing",
+        "amount": "-342905.28",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "opex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": true,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P4-0043",
+        "date": "2025-10-14",
+        "counterparty": "Kazakhstan Grain Union JSC",
+        "description": "Grain terminal throughput sales settlement 2025",
+        "amount": "7004318.47",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "revenue",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P4-0048",
+        "date": "2025-11-06",
+        "counterparty": "Aral Capital Partners LLP",
+        "description": "Management advisory retainer",
+        "amount": "-288417.52",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "consulting",
+        "related_party": true,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      }
+    ],
+    "cells": {
+      "6.1": {
+        "metric": "adjusted_ebitda_margin",
+        "requires": [
+          "revenue",
+          "opex"
+        ],
+        "raw": "0.3314123065566434759783274103",
+        "actual": "0.33",
+        "status": "COMPLIANT",
+        "comparison": "0.3314123065566434759783274103 >= 0.28 (minimum)",
+        "evidence": null,
+        "threshold": "0.28",
+        "direction": "min",
+        "unit": "ratio",
+        "covenant_text": "Минимальная скорректированная рентабельность по EBITDA. На протяжении периода с 2025-01-01 по 2025-12-31 Aktobe Grain Terminal JSC обеспечивает, чтобы отношение Скорректированной EBITDA к Выручке составляло не менее 0.28x. Скорректированная EBITDA рассчитывается как Выручка за вычетом Операционных расходов с прибавлением разовых статей, признанных аудиторами Заёмщика подлежащими обратному добавлению согласно раскрытой учётной политике; статьи, не отвечающие установленному порогу существенности, к добавлению не принимаются."
+      },
+      "6.2": {
+        "metric": "category_expense_cap",
+        "requires": [
+          "capex"
+        ],
+        "raw": "1652704.31",
+        "actual": "1652704.31",
+        "status": "COMPLIANT",
+        "comparison": "1652704.31 <= 1800000.00 (maximum)",
+        "evidence": null,
+        "threshold": "1800000.00",
+        "direction": "max",
+        "unit": "usd",
+        "covenant_text": "Максимальные расходы по категории. Ограничение расходов по статье «Капитальные затраты». Aktobe Grain Terminal JSC обязуется обеспечить, чтобы совокупные расходы по указанной статье, понесённые в период с 2025-01-01 по 2025-12-31, не превышали $1,800,000.00. Любая сумма, которую аудиторы Заёмщика признают подлежащей отражению как «Капитальные затраты», учитывается при расчёте независимо от счёта, на котором она была первоначально отражена."
+      },
+      "6.3": {
+        "metric": "related_party_ratio_of_revenue",
+        "requires": [
+          "@related",
+          "revenue"
+        ],
+        "raw": "0.04117709970431998361148190339",
+        "actual": "0.04",
+        "status": "BREACH",
+        "comparison": "0.04117709970431998361148190339 > 0.04 (maximum)",
+        "evidence": "TXN-P4-0048",
+        "threshold": "0.04",
+        "direction": "max",
+        "unit": "ratio",
+        "covenant_text": "Maximum Related-Party Payments as a Proportion of Revenue. Заёмщик, Aktobe Grain Terminal JSC, обязуется не допускать, чтобы совокупные Ограниченные платежи в пользу аффилированных лиц за период с 2025-01-01 по 2025-12-31 превышали 0.04x от выручки за тот же 5 период. Отнесение контрагента к аффилированным лицам определяется в соответствии с политикой в отношении связанных сторон, зафиксированной в досье Заёмщика по идентификации клиента, а не назначением платежа."
+      }
+    }
+  },
+  "P5": {
+    "trail": [
+      "ledger: 54 rows for P5; 50 decoy rows dropped; 4 covenant-relevant rows retained",
+      "kyc: related-party threshold 35.0% (read from the dossier)",
+      "kyc: Pavlodar Plant Services LLP 33.800% -> not related",
+      "kyc: Sarybel Capital LLP. 41.200% -> RELATED",
+      "kyc: Ural Turbine Works LLP 9.400% -> not related"
+    ],
+    "rows": [
+      {
+        "txn_id": "TXN-P5-0016",
+        "date": "2025-02-11",
+        "counterparty": "Ural Turbine Works LLP",
+        "description": "Purchase of switchyard equipment",
+        "amount": "-1703882.44",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "capex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P5-0031",
+        "date": "2025-05-27",
+        "counterparty": "Pavlodar Plant Services LLP",
+        "description": "Turbine hall servicing and operating costs 2025",
+        "amount": "-5902447.13",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "opex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P5-0013",
+        "date": "2025-08-19",
+        "counterparty": "KEGOC Grid Operations JSC",
+        "description": "Generating capacity availability sales settlement 2025",
+        "amount": "8214663.28",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "revenue",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P5-0004",
+        "date": "2025-10-02",
+        "counterparty": "Sarybel Capital LLP",
+        "description": "Management advisory retainer",
+        "amount": "-273418.66",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "consulting",
+        "related_party": true,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      }
+    ],
+    "cells": {
+      "6.1": {
+        "metric": "group_capex_to_ebitda",
+        "requires": [
+          "@group",
+          "revenue",
+          "opex"
+        ],
+        "raw": "9.448667915410935954235939404",
+        "actual": "9.45",
+        "status": "BREACH",
+        "comparison": "9.448667915410935954235939404 > 9.00 (maximum)",
+        "evidence": null,
+        "threshold": "9.00",
+        "direction": "max",
+        "unit": "ratio",
+        "covenant_text": "Максимальное отношение капитальных затрат Группы к EBITDA Заёмщика. На протяжении периода с 2025-01-01 по 2025-12-31 Ekibastuz Power Services JSC обеспечивает, чтобы отношение совокупных капитальных затрат Группы к EBITDA Заёмщика не превышало 9.00x. Капитальные затраты Группы определяются по консолидированной отчётности конечной материнской компании Группы и включают затраты всех участников Группы; EBITDA Заёмщика рассчитывается по его собственной отчётности как Выручка за вычетом Операционных расходов."
+      },
+      "6.2": {
+        "metric": "category_revenue_floor",
+        "requires": [
+          "revenue"
+        ],
+        "raw": "8214663.28",
+        "actual": "8214663.28",
+        "status": "COMPLIANT",
+        "comparison": "8214663.28 >= 7500000.00 (minimum)",
+        "evidence": null,
+        "threshold": "7500000.00",
+        "direction": "min",
+        "unit": "usd",
+        "covenant_text": "Минимальная выручка по категории. Для целей настоящей статьи под поступлениями по статье «Выручка» понимаются суммы, отнесённые к данной статье в аудированной финансовой отчётности Заёмщика с учётом переквалификаций, произведённых аудиторами Заёмщика для целей соблюдения ковенантов. Ekibastuz Power Services JSC обязуется поддерживать совокупный объём таких поступлений за период с 2025-01-01 по 2025-12-31 на уровне не менее $7,500,000.00."
+      },
+      "6.3": {
+        "metric": "related_party_cap",
+        "requires": [
+          "@related"
+        ],
+        "raw": "273418.66",
+        "actual": "273418.66",
+        "status": "BREACH",
+        "comparison": "273418.66 > 260000.00 (maximum)",
+        "evidence": "TXN-P5-0004",
+        "threshold": "260000.00",
+        "direction": "max",
+        "unit": "usd",
+        "covenant_text": "Максимальные платежи связанным сторонам. За период с 2025-01-01 по 2025-12-31 совокупные платежи Заёмщика (Ekibastuz Power Services JSC) в адрес аффилированных и связанных 5 сторон не должны превышать $260,000.00. Принадлежность контрагента к связанным сторонам устанавливается с учётом раскрытий в комплаенс-досье Заёмщика."
+      }
+    }
+  },
+  "P6": {
+    "trail": [
+      "ledger: 56 rows for P6; 50 decoy rows dropped; 6 covenant-relevant rows retained",
+      "!! no KYC ownership table: related parties cannot be established from documents",
+      "kyc-fallback: TXN-P6-0040 (Taraz Holding Group LLP) treated as related party"
+    ],
+    "rows": [
+      {
+        "txn_id": "TXN-P6-0022",
+        "date": "2025-02-24",
+        "counterparty": "Ural Grinding Works LLP",
+        "description": "Purchase of clinker grinding equipment",
+        "amount": "-1482663.28",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "capex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P6-0004",
+        "date": "2025-03-06",
+        "counterparty": "Taraz Cement Personnel LLP",
+        "description": "Plant crew payroll disbursement 2025",
+        "amount": "-1482663.19",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "labour",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P6-0041",
+        "date": "2025-04-16",
+        "counterparty": "Taraz Kiln Services LLP",
+        "description": "Kiln servicing and operating costs 2025",
+        "amount": "-4204663.19",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "opex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P6-0031",
+        "date": "2025-07-03",
+        "counterparty": "Zhambyl Construction Supply JSC",
+        "description": "Cement despatch sales settlement 2025",
+        "amount": "6918204.37",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "revenue",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P6-0040",
+        "date": "2025-09-29",
+        "counterparty": "Taraz Holding Group LLP",
+        "description": "Management advisory retainer",
+        "amount": "-418662.44",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "consulting",
+        "related_party": true,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": [
+          "treated as the related party by the retainer-counterparty fallback (no legible ownership table for this borrower)"
+        ]
+      },
+      {
+        "txn_id": "TXN-P6-0044",
+        "date": "2025-11-25",
+        "counterparty": "Zhambyl Energy Supply JSC",
+        "description": "Electricity supply charges 2025",
+        "amount": "-418204.37",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "utilities",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      }
+    ],
+    "cells": {
+      "6.1": {
+        "metric": "related_party_share_of_opex",
+        "requires": [
+          "@related",
+          "opex"
+        ],
+        "raw": "0.09957098133227646231516584328",
+        "actual": "0.10",
+        "status": "BREACH",
+        "comparison": "0.09957098133227646231516584328 > 0.08 (maximum)",
+        "evidence": "TXN-P6-0040",
+        "threshold": "0.08",
+        "direction": "max",
+        "unit": "ratio",
+        "covenant_text": "Максимальная доля платежей связанным сторонам в операционных расходах. Заёмщик, Taraz Cement Works JSC, обязуется не допускать, чтобы совокупный объём платежей в пользу связанных сторон за период с 2025-01-01 по 2025-12-31 превышал 0.08x Операционных расходов Заёмщика за этот период. Для целей настоящего ковенанта круг связанных сторон определяется по досье идентификации клиента, ведущемуся подразделением комплаенс Кредитора, а Операционные расходы определяются на основании аудированной отчётности Заёмщика. Платёж в пользу связанной стороны учитывается в полном объёме независимо от категории расходов, по которой он отражён."
+      },
+      "6.2": {
+        "metric": "revenue_cover_of_payroll_and_utilities",
+        "requires": [
+          "revenue",
+          "labour",
+          "utilities"
+        ],
+        "raw": "3.639498361474483787813181472",
+        "actual": "3.64",
+        "status": "COMPLIANT",
+        "comparison": "3.639498361474483787813181472 >= 3.00 (minimum)",
+        "evidence": null,
+        "threshold": "3.00",
+        "direction": "min",
+        "unit": "ratio",
+        "covenant_text": "Минимальное покрытие расходов на персонал и коммунальные услуги выручкой. Заёмщик, Taraz Cement Works JSC, обеспечивает, чтобы Выручка за период с 2025-01-01 по 2025-12-31 составляла не менее 3.00x совокупной величины Расходов на оплату труда и Коммунальных расходов за этот период. Для целей настоящего ковенанта Расходы на оплату труда означают все выплаты персоналу и связанные с ними расходы, Коммунальные расходы означают расходы на электроэнергию, водоснабжение и аналогичные поставки, в каждом случае определяемые на основании аудированной отчётности Заёмщика."
+      },
+      "6.3": {
+        "metric": "category_expense_cap",
+        "requires": [
+          "capex"
+        ],
+        "raw": "1482663.28",
+        "actual": "1482663.28",
+        "status": "COMPLIANT",
+        "comparison": "1482663.28 <= 1600000.00 (maximum)",
+        "evidence": null,
+        "threshold": "1600000.00",
+        "direction": "max",
+        "unit": "usd",
+        "covenant_text": "Максимальные расходы по категории. Заёмщик, Taraz Cement Works JSC, обязуется не допускать, чтобы совокупный объём расходов по статье «Капитальные затраты» за период с 2025-01-01 по 2025-12-31 превышал $1,600,000.00. Для целей настоящего ковенанта расходы классифицируются в соответствии с аудированной финансовой отчётностью 6 Заёмщика; любая сумма, переклассифицированная аудиторами Заёмщика в категорию «Капитальные затраты», включается в настоящий расчёт независимо от её первоначального отражения в учёте Заёмщика."
+      }
+    }
+  },
+  "P7": {
+    "trail": [
+      "ledger: 56 rows for P7; 50 decoy rows dropped; 6 covenant-relevant rows retained",
+      "off-ledger: TXN-P7-0033 set to -486204.19",
+      "kyc: related-party threshold 32.0% (read from the dossier)",
+      "kyc: Atyrau Energy Supply JSC 8.800% -> not related",
+      "kyc: Atyrau Holding Group L.L.P. 37.900% -> RELATED",
+      "kyc: Atyrau Pump Station Services LLP 29.300% -> not related"
+    ],
+    "rows": [
+      {
+        "txn_id": "TXN-P7-0031",
+        "date": "2025-03-27",
+        "counterparty": "Atyrau Pump Station Services LLP",
+        "description": "Pump station servicing and operating costs 2025",
+        "amount": "-6418003.77",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "opex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P7-0010",
+        "date": "2025-04-21",
+        "counterparty": "State Revenue Committee",
+        "description": "Corporate income tax instalment 2025",
+        "amount": "-402118.64",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "taxes",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P7-0032",
+        "date": "2025-06-11",
+        "counterparty": "KazTransOil Trunk Systems JSC",
+        "description": "Pipeline transit sales settlement 2025",
+        "amount": "9146882.53",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "revenue",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P7-0047",
+        "date": "2025-08-06",
+        "counterparty": "Atyrau Energy Supply JSC",
+        "description": "Electricity supply charges 2025",
+        "amount": "-91447.35",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "utilities",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P7-0035",
+        "date": "2025-10-09",
+        "counterparty": "Atyrau Holding Group LLP",
+        "description": "Management advisory retainer",
+        "amount": "-291663.82",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "consulting",
+        "related_party": true,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P7-0033",
+        "date": "2025-11-18",
+        "counterparty": "State Revenue Committee",
+        "description": "Mineral extraction tax assessment 2025",
+        "amount": "-486204.19",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "taxes",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": [
+          "amount $486204.19 taken from the auditor/treasury disclosure; absent from the ledger export"
+        ]
+      }
+    ],
+    "cells": {
+      "6.1": {
+        "metric": "tax_and_utility_burden",
+        "requires": [
+          "taxes",
+          "utilities",
+          "revenue",
+          "opex"
+        ],
+        "raw": "0.3590376363953963275378346233",
+        "actual": "0.36",
+        "status": "BREACH",
+        "comparison": "0.3590376363953963275378346233 > 0.30 (maximum)",
+        "evidence": "TXN-P7-0033",
+        "threshold": "0.30",
+        "direction": "max",
+        "unit": "ratio",
+        "covenant_text": "Максимальное отношение налоговой и коммунальной нагрузки к EBITDA. На протяжении периода с 2025-01-01 по 2025-12-31 Atyrau Pipeline Services JSC обеспечивает, чтобы отношение суммы Налогов и Коммунальных расходов к EBITDA не превышало 0.30x. Начисленные, но не уплаченные в течение периода налоги учитываются наравне с уплаченными; их величина подтверждается учётными данными казначейства Заёмщика."
+      },
+      "6.2": {
+        "metric": "category_revenue_floor",
+        "requires": [
+          "revenue"
+        ],
+        "raw": "9146882.53",
+        "actual": "9146882.53",
+        "status": "COMPLIANT",
+        "comparison": "9146882.53 >= 8700000.00 (minimum)",
+        "evidence": null,
+        "threshold": "8700000.00",
+        "direction": "min",
+        "unit": "usd",
+        "covenant_text": "Минимальная выручка по категории. Atyrau Pipeline Services JSC обязуется обеспечить, чтобы совокупные поступления по статье «Выручка» за период с 2025-01-01 по 2025-12-31 составляли не менее $8,700,000.00. При расчёте учитываются только суммы, отнесённые к указанной статье в аудированной финансовой отчётности Заёмщика; сумма, переквалифицированная аудиторами Заёмщика в иную категорию, из расчёта исключается."
+      },
+      "6.3": {
+        "metric": "related_party_cap",
+        "requires": [
+          "@related"
+        ],
+        "raw": "291663.82",
+        "actual": "291663.82",
+        "status": "BREACH",
+        "comparison": "291663.82 > 275000.00 (maximum)",
+        "evidence": "TXN-P7-0035",
+        "threshold": "275000.00",
+        "direction": "max",
+        "unit": "usd",
+        "covenant_text": "Максимальные платежи связанным сторонам. Ограничение платежей связанным сторонам. За исключением случаев, прямо согласованных Кредитором в письменной форме, Atyrau Pipeline Services JSC не вправе прямо или косвенно перечислять, передавать или иным образом предоставлять связанным сторонам суммы, совокупный размер которых за период с 2025-01-01 по 2025-12-31 превышает $275,000.00. К связанным сторонам относится любой контрагент, указанный в качестве такового в комплаенс-досье Заёмщика, независимо от того, описана ли операция в учёте как сделка со связанной стороной. 6"
+      }
+    }
+  },
+  "P8": {
+    "trail": [
+      "ledger: 55 rows for P8; 50 decoy rows dropped; 5 covenant-relevant rows retained",
+      "off-ledger: TXN-P8-0031 set to -884204.16",
+      "kyc: related-party threshold 38.0% (read from the dossier)",
+      "kyc: Kyzylorda Drilling Personnel LLP 36.200% -> not related",
+      "kyc: Syrdarya Capital Holding, LLP 44.600% -> RELATED",
+      "kyc: Ural Rig Manufacturing LLP 10.700% -> not related"
+    ],
+    "rows": [
+      {
+        "txn_id": "TXN-P8-0005",
+        "date": "2025-02-06",
+        "counterparty": "Kyzylorda Drilling Personnel LLP",
+        "description": "Field crew payroll disbursement 2025",
+        "amount": "-2418663.27",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "labour",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P8-0015",
+        "date": "2025-05-14",
+        "counterparty": "KazMunayGas Exploration JSC",
+        "description": "Drilling services sales settlement 2025",
+        "amount": "7884663.19",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "revenue",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P8-0030",
+        "date": "2025-07-30",
+        "counterparty": "Ural Rig Manufacturing LLP",
+        "description": "Purchase of drilling rig equipment",
+        "amount": "-1918204.36",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "capex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P8-0016",
+        "date": "2025-09-17",
+        "counterparty": "Syrdarya Capital Holding LLP",
+        "description": "Management advisory retainer",
+        "amount": "-342118.65",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "consulting",
+        "related_party": true,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P8-0031",
+        "date": "2025-12-04",
+        "counterparty": "Kyzylorda Drilling Personnel LLP",
+        "description": "Rotational staff payroll settlement Q4 2025",
+        "amount": "-884204.16",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "labour",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": [
+          "amount $884204.16 taken from the auditor/treasury disclosure; absent from the ledger export"
+        ]
+      }
+    ],
+    "cells": {
+      "6.1": {
+        "metric": "total_personnel_obligations",
+        "requires": [
+          "labour",
+          "@disclosed"
+        ],
+        "raw": "4221314.95",
+        "actual": "4221314.95",
+        "status": "BREACH",
+        "comparison": "4221314.95 > 4000000.00 (maximum)",
+        "evidence": "TXN-P8-0031",
+        "threshold": "4000000.00",
+        "direction": "max",
+        "unit": "usd",
+        "covenant_text": "Максимальные совокупные обязательства по персоналу. Заёмщик, Kyzylorda Drilling Services JSC, обязуется не допускать, чтобы Совокупные обязательства по персоналу по состоянию на 2025-12-31 превышали $4,000,000.00. Для целей настоящего ковенанта Совокупные обязательства по персоналу означают сумму (а) всех расходов на оплату труда, понесённых Заёмщиком за период с 2025-01-01 по 2025-12-31, независимо от того, отражены ли соответствующие суммы в его операционных записях, и (б) совокупного обязательства Заёмщика по любой программе выходных пособий, сокращения или удержания персонала, действующей на 2025-12-31, как раскрыто в примечаниях к отчётности Заёмщика, независимо от наступления срока платежа по такой программе."
+      },
+      "6.2": {
+        "metric": "category_expense_cap",
+        "requires": [
+          "capex"
+        ],
+        "raw": "1918204.36",
+        "actual": "1918204.36",
+        "status": "COMPLIANT",
+        "comparison": "1918204.36 <= 2100000.00 (maximum)",
+        "evidence": null,
+        "threshold": "2100000.00",
+        "direction": "max",
+        "unit": "usd",
+        "covenant_text": "Максимальные расходы по категории. Заёмщик, Kyzylorda Drilling Services JSC, обязуется не допускать, чтобы совокупный объём расходов по статье «Капитальные затраты» за период с 2025-01-01 по 2025-12-31 превышал $2,100,000.00. Для целей настоящего ковенанта расходы классифицируются в соответствии с аудированной финансовой отчётностью Заёмщика; любая сумма, переклассифицированная аудиторами Заёмщика в категорию «Капитальные затраты», включается в настоящий расчёт независимо от её первоначального отражения в учёте Заёмщика."
+      },
+      "6.3": {
+        "metric": "related_party_ratio_of_revenue",
+        "requires": [
+          "@related",
+          "revenue"
+        ],
+        "raw": "0.04339039496752428812371375371",
+        "actual": "0.04",
+        "status": "BREACH",
+        "comparison": "0.04339039496752428812371375371 > 0.04 (maximum)",
+        "evidence": "TXN-P8-0016",
+        "threshold": "0.04",
+        "direction": "max",
+        "unit": "ratio",
+        "covenant_text": "Maximum Related-Party Payments as a Proportion of Revenue. Заёмщик, Kyzylorda Drilling Services JSC, обязуется не допускать, чтобы совокупные Ограниченные платежи в пользу аффилированных лиц за период с 2025-01-01 по 2025-12-31 превышали 6 0.04x от выручки за тот же период. Отнесение контрагента к аффилированным лицам определяется в соответствии с политикой в отношении связанных сторон, зафиксированной в досье Заёмщика по идентификации клиента, а не назначением платежа."
+      }
+    }
+  },
+  "P9": {
+    "trail": [
+      "ledger: 55 rows for P9; 50 decoy rows dropped; 5 covenant-relevant rows retained",
+      "kyc: related-party threshold 34.0% (read from the dossier)",
+      "kyc: Kazakhmys Smelting JSC 6.900% -> not related",
+      "kyc: Ulytau Capital LLP. 39.700% -> RELATED",
+      "kyc: Ural Haul Systems LLP 31.400% -> not related"
+    ],
+    "rows": [
+      {
+        "txn_id": "TXN-P9-0012",
+        "date": "2025-04-02",
+        "counterparty": "Kazakhmys Smelting JSC",
+        "description": "Ore haulage sales settlement 2025",
+        "amount": "8442118.53",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "revenue",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P9-0035",
+        "date": "2025-06-26",
+        "counterparty": "Ural Haul Systems LLP",
+        "description": "Purchase of haul truck equipment",
+        "amount": "-1204663.28",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "capex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P9-0040",
+        "date": "2025-07-19",
+        "counterparty": "Ulytau Capital LLP",
+        "description": "Management advisory retainer",
+        "amount": "-268447.19",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "consulting",
+        "related_party": true,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P9-0025",
+        "date": "2025-09-08",
+        "counterparty": "Zhezkazgan Processing Holdings LLP",
+        "description": "Transfer of processing plant equipment to subsidiary",
+        "amount": "-418204.37",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "capex_transfer",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P9-0017",
+        "date": "2025-11-12",
+        "counterparty": "Zhezkazgan Conveyor Assets LLP",
+        "description": "Transfer of conveyor equipment to subsidiary",
+        "amount": "-302118.64",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "capex_transfer",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      }
+    ],
+    "cells": {
+      "6.1": {
+        "metric": "unrestricted_subsidiary_transfers",
+        "requires": [
+          "capex_transfer",
+          "capex"
+        ],
+        "raw": "0.3741964364847502368445439682",
+        "actual": "0.37",
+        "status": "BREACH",
+        "comparison": "0.3741964364847502368445439682 > 0.15 (maximum)",
+        "evidence": null,
+        "threshold": "0.15",
+        "direction": "max",
+        "unit": "ratio",
+        "covenant_text": "Максимальная доля активов, переданных неограниченным дочерним организациям. Заёмщик, Zhezkazgan Mining Services JSC, обязуется не допускать, чтобы совокупная стоимость капитальных активов, переданных Неограниченным дочерним организациям за период с 2025-01-01 по 2025-12-31, превышала 0.15x совокупных капитальных затрат Заёмщика за этот период. Для целей настоящего ковенанта Неограниченной дочерней организацией признаётся дочерняя организация, получившая соответствующий статус и, следовательно, находящаяся вне обеспечения Кредитора, согласно досье идентификации клиента; передача дочерней организации, сохраняющей статус Ограниченной, в расчёт не включается."
+      },
+      "6.2": {
+        "metric": "category_revenue_floor",
+        "requires": [
+          "revenue"
+        ],
+        "raw": "8442118.53",
+        "actual": "8442118.53",
+        "status": "COMPLIANT",
+        "comparison": "8442118.53 >= 6900000.00 (minimum)",
+        "evidence": null,
+        "threshold": "6900000.00",
+        "direction": "min",
+        "unit": "usd",
+        "covenant_text": "Минимальная выручка по категории. Заёмщик, Zhezkazgan Mining Services JSC, обязуется обеспечить, чтобы совокупная выручка по статье «Выручка» за период с 2025-01-01 по 2025-12-31 составляла не менее $6,900,000.00. Суммы, переклассифицированные аудиторами Заёмщика из указанной категории, исключаются из расчёта."
+      },
+      "6.3": {
+        "metric": "related_party_cap",
+        "requires": [
+          "@related"
+        ],
+        "raw": "268447.19",
+        "actual": "268447.19",
+        "status": "BREACH",
+        "comparison": "268447.19 > 225000.00 (maximum)",
+        "evidence": "TXN-P9-0040",
+        "threshold": "225000.00",
+        "direction": "max",
+        "unit": "usd",
+        "covenant_text": "Максимальные платежи связанным сторонам. Финансовый ковенант. В период с 2025-01-01 по 2025-12-31 Zhezkazgan Mining Services JSC не вправе совершать Ограниченные платежи в пользу связанных сторон на совокупную сумму свыше $225,000.00. Платежи в адрес контрагентов, отнесённых к связанным сторонам в досье идентификации клиента, включаются в указанную совокупную сумму независимо от их описания в учёте, а Заёмщик обязан подтвердить соблюдение настоящей статьи в каждом расчёте, представляемом Кредитору. 6"
+      }
+    }
+  },
+  "P10": {
+    "trail": [
+      "ledger: 59 rows for P10; 50 decoy rows dropped; 9 covenant-relevant rows retained",
+      "reclass: TXN-P10-0017 opex -> insurance ($142118.64, Tengiz Risk Engineering Bureau)",
+      "rejected reclass: TXN-P10-0012 stays Операционные 2 расходы",
+      "kyc: related-party threshold 36.0% (read from the dossier)",
+      "kyc: Saryarka Capital Partners\" LLP 42.300% -> RELATED",
+      "kyc: Karaganda Energy Supply JSC 12.100% -> not related",
+      "kyc: Saryarka Terminal Properties LLP 33.500% -> not related"
+    ],
+    "rows": [
+      {
+        "txn_id": "TXN-P10-0011",
+        "date": "2025-02-17",
+        "counterparty": "Eurasia Insurance Company JSC",
+        "description": "Property insurance premium 2025",
+        "amount": "-248663.19",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "insurance",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P10-0021",
+        "date": "2025-03-12",
+        "counterparty": "Saryarka Terminal Properties LLP",
+        "description": "Warehouse land lease payments 2025",
+        "amount": "-1204663.28",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "lease",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P10-0020",
+        "date": "2025-04-09",
+        "counterparty": "Karaganda Terminal Personnel LLP",
+        "description": "Terminal staff payroll disbursement 2025",
+        "amount": "-1204118.53",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "labour",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P10-0055",
+        "date": "2025-05-08",
+        "counterparty": "Karaganda Distribution Group JSC",
+        "description": "Warehouse handling sales settlement 2025",
+        "amount": "7204882.16",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "revenue",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P10-0017",
+        "date": "2025-06-04",
+        "counterparty": "Tengiz Risk Engineering Bureau",
+        "description": "Warehouse risk survey servicing 2025",
+        "amount": "-142118.64",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "insurance",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": true,
+        "notes": [
+          "reclassified Операционные расходы -> Страховые премии by the auditor"
+        ]
+      },
+      {
+        "txn_id": "TXN-P10-0064",
+        "date": "2025-08-21",
+        "counterparty": "Karaganda Energy Supply JSC",
+        "description": "Electricity and water utilities supply 2025",
+        "amount": "-418204.37",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "utilities",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P10-0063",
+        "date": "2025-09-15",
+        "counterparty": "State Revenue Committee",
+        "description": "Corporate income tax instalment 2025",
+        "amount": "-882447.19",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "taxes",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-P10-0012",
+        "date": "2025-10-27",
+        "counterparty": "Altyn Fire Protection LLP",
+        "description": "Fire safety systems servicing 2025",
+        "amount": "-118447.52",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "opex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": [
+          "reclassification considered and REJECTED by the auditor; stays Операционные 2 расходы"
+        ]
+      },
+      {
+        "txn_id": "TXN-P10-0002",
+        "date": "2025-12-02",
+        "counterparty": "Saryarka Capital Partners LLP",
+        "description": "Management advisory retainer",
+        "amount": "-318663.44",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "consulting",
+        "related_party": true,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      }
+    ],
+    "cells": {
+      "6.1": {
+        "metric": "insurance_cover_of_premises_costs",
+        "requires": [
+          "insurance",
+          "lease",
+          "utilities"
+        ],
+        "raw": "0.2407971038180470231198459098",
+        "actual": "0.24",
+        "status": "COMPLIANT",
+        "comparison": "0.2407971038180470231198459098 >= 0.20 (minimum)",
+        "evidence": "TXN-P10-0017",
+        "threshold": "0.20",
+        "direction": "min",
+        "unit": "ratio",
+        "covenant_text": "Минимальное страховое покрытие расходов на содержание помещений. На протяжении периода с 2025-01-01 по 2025-12-31 Karaganda Logistics Terminal JSC обеспечивает, чтобы отношение Страховых премий к сумме Арендных и Коммунальных расходов составляло не менее 0.20x. Учитываются реклассификации, принятые аудиторами Заёмщика; реклассификации, рассмотренные и отклонённые аудиторами, в расчёт не принимаются."
+      },
+      "6.2": {
+        "metric": "revenue_less_largest_overhead",
+        "requires": [
+          "revenue",
+          "labour",
+          "taxes"
+        ],
+        "raw": "6000763.63",
+        "actual": "6000763.63",
+        "status": "COMPLIANT",
+        "comparison": "6000763.63 >= 5000000.00 (minimum)",
+        "evidence": null,
+        "threshold": "5000000.00",
+        "direction": "min",
+        "unit": "usd",
+        "covenant_text": "Минимальная выручка за вычетом наибольшей статьи накладных расходов. На протяжении периода с 2025-01-01 по 2025-12-31 Karaganda Logistics Terminal JSC обеспечивает, чтобы Выручка за вычетом наибольшей из величин Расходов на оплату труда и Налогов составляла не менее $5,000,000.00. Меньшая из двух величин в расчёт не принимается."
+      },
+      "6.3": {
+        "metric": "related_party_ratio_of_revenue",
+        "requires": [
+          "@related",
+          "revenue"
+        ],
+        "raw": "0.04422882053077187316551475701",
+        "actual": "0.04",
+        "status": "COMPLIANT",
+        "comparison": "0.04422882053077187316551475701 <= 0.05 (maximum)",
+        "evidence": null,
+        "threshold": "0.05",
+        "direction": "max",
+        "unit": "ratio",
+        "covenant_text": "Maximum Related-Party Payments as a Proportion of Revenue. Концентрация расчётов со связанными сторонами. За период с 2025-01-01 по 2025-12-31 Karaganda Logistics Terminal JSC не вправе допускать, чтобы совокупные Ограниченные платежи в пользу аффилированных лиц составили более 0.05x от выручки за тот же период. Контрагент считается аффилированным лицом, если он учтён как связанная сторона в досье «Знай своего клиента» (KYC) Заёмщика, независимо от описания соответствующей операции в учёте Заёмщика."
+      }
+    }
+  },
+  "B1": {
+    "trail": [
+      "ledger: 57 rows for B1; 50 decoy rows dropped; 7 covenant-relevant rows retained",
+      "reclass: TXN-B1-0020 consulting -> interest ($592296.10, Irtysh Advisory Bureau)",
+      "kyc: related-party threshold 20.0% (read from the dossier)",
+      "kyc: Ertis Capital, LLP 31.400% -> RELATED",
+      "kyc: Irtysh Advisory Bureau 18.600% -> not related",
+      "kyc: Pavlodar Plant Services LLP 12.500% -> not related"
+    ],
+    "rows": [
+      {
+        "txn_id": "TXN-B1-0020",
+        "date": "2025-05-12",
+        "counterparty": "Irtysh Advisory Bureau",
+        "description": "Advisory engagement on tariff structuring",
+        "amount": "-592296.10",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "interest",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": true,
+        "notes": [
+          "reclassified Консультационные услуги -> Процентные расходы by the auditor"
+        ]
+      },
+      {
+        "txn_id": "TXN-B1-0023",
+        "date": "2025-06-30",
+        "counterparty": "Pavlodar Plant Services LLP",
+        "description": "Plant operating and maintenance expenses",
+        "amount": "-6166592.66",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "opex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-B1-0033",
+        "date": "2025-07-15",
+        "counterparty": "Halyk Bank of Kazakhstan JSC",
+        "description": "Loan interest payment second quarter",
+        "amount": "-1540833.29",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "interest",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-B1-0030",
+        "date": "2025-08-20",
+        "counterparty": "Ertis Capital LLP",
+        "description": "Management advisory retainer",
+        "amount": "-307018.08",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "consulting",
+        "related_party": true,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-B1-0026",
+        "date": "2025-09-30",
+        "counterparty": "KEGOC National Grid JSC",
+        "description": "Generation capacity sales settlement 2025",
+        "amount": "9741934.78",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "revenue",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-B1-0014",
+        "date": "2025-11-04",
+        "counterparty": "Pavlodar Regional Grid LLP",
+        "description": "Electricity supply charges for the plant 2025",
+        "amount": "-937215.88",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "utilities",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-B1-0004",
+        "date": "2025-12-22",
+        "counterparty": "Pavlodar Personnel Bureau LLP",
+        "description": "Payroll settlement for operational staff 2025",
+        "amount": "-1284663.42",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "labour",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      }
+    ],
+    "cells": {
+      "6.1": {
+        "metric": "interest_coverage",
+        "requires": [
+          "revenue",
+          "opex",
+          "interest"
+        ],
+        "raw": "1.676101851468091206600458494",
+        "actual": "1.68",
+        "status": "BREACH",
+        "comparison": "1.676101851468091206600458494 < 2.00 (minimum)",
+        "evidence": "TXN-B1-0020",
+        "threshold": "2.00",
+        "direction": "min",
+        "unit": "ratio",
+        "covenant_text": "Минимальный коэффициент покрытия процентов. Заёмщик, Ekibastuz Energy JSC, обязуется не допускать снижения Коэффициента покрытия процентов ниже величины 2.00x за период с 2025-01-01 по 2025-12-31. Для целей настоящего ковенанта Коэффициент покрытия процентов означает отношение показателя EBITDA (Выручка за вычетом Операционных расходов) к Процентным расходам за период, определяемых на основании аудированной отчётности Заёмщика с учётом любой переквалификации затрат в состав Процентных расходов, принятой аудиторами Заёмщика для целей соблюдения ковенанта."
+      },
+      "6.2": {
+        "metric": "individual_overhead_ceiling",
+        "requires": [
+          "labour",
+          "utilities"
+        ],
+        "raw": "1284663.42",
+        "actual": "1284663.42",
+        "status": "COMPLIANT",
+        "comparison": "1284663.42 <= 1500000.00 (maximum)",
+        "evidence": null,
+        "threshold": "1500000.00",
+        "direction": "max",
+        "unit": "usd",
+        "covenant_text": "Individual Overhead Line Ceiling. Заёмщик, Ekibastuz Energy JSC, обязуется не допускать, чтобы какая-либо отдельная статья накладных расходов превышала $1,500,000.00 за период с 2025-01-01 по 2025-12-31. Для целей настоящего ковенанта отдельными статьями накладных расходов признаются, по отдельности, а не в совокупности: (а) расходы на оплату труда и (б) расходы на коммунальные услуги, определяемые по аудированной отчётности Заёмщика. Соблюдение проверяется по наибольшей из указанных сумм; их сумма не является показателем настоящего ковенанта. 5"
+      },
+      "6.3": {
+        "metric": "related_party_cap",
+        "requires": [
+          "@related"
+        ],
+        "raw": "307018.08",
+        "actual": "307018.08",
+        "status": "COMPLIANT",
+        "comparison": "307018.08 <= 500000.00 (maximum)",
+        "evidence": null,
+        "threshold": "500000.00",
+        "direction": "max",
+        "unit": "usd",
+        "covenant_text": "Максимальные платежи связанным сторонам. За период с 2025-01-01 по 2025-12-31 совокупные платежи Заёмщика (Ekibastuz Energy JSC) в адрес аффилированных и связанных сторон не должны превышать $500,000.00. Принадлежность контрагента к связанным сторонам устанавливается с учётом раскрытий в комплаенс-досье Заёмщика."
+      }
+    }
+  },
+  "B4": {
+    "trail": [
+      "ledger: 57 rows for B4; 50 decoy rows dropped; 7 covenant-relevant rows retained",
+      "cut-off: TXN-B4-0026 excluded from the period",
+      "kyc: related-party threshold 30.0% (read from the dossier)",
+      "kyc: Atyrau Pipeline Engineering LLP 11.700% -> not related",
+      "kyc: Kazyna Capital LLP. 38.900% -> RELATED",
+      "kyc: Shymkent Fuel Distributors LLP 48.0% held indirectly via a 27.3%-owned vehicle -> effective 13.104%",
+      "kyc: Shymkent Fuel Distributors LLP 13.104% -> not related",
+      "kyc: Turkistan Petroleum Traders LLP 29.400% -> not related"
+    ],
+    "rows": [
+      {
+        "txn_id": "TXN-B4-0030",
+        "date": "2025-03-20",
+        "counterparty": "Shymkent Fuel Distributors LLP",
+        "description": "Refinery product sales settlement first quarter",
+        "amount": "2048994.35",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "revenue",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-B4-0021",
+        "date": "2025-05-14",
+        "counterparty": "Atyrau Pipeline Engineering LLP",
+        "description": "Purchase of pipeline pumping equipment",
+        "amount": "-1527726.21",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "capex",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-B4-0015",
+        "date": "2025-06-25",
+        "counterparty": "Shymkent Fuel Distributors LLP",
+        "description": "Refinery product sales settlement second quarter",
+        "amount": "1943580.97",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "revenue",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-B4-0009",
+        "date": "2025-07-08",
+        "counterparty": "Kazyna Capital LLP",
+        "description": "Management retainer fee",
+        "amount": "-303949.09",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "consulting",
+        "related_party": true,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-B4-0056",
+        "date": "2025-09-22",
+        "counterparty": "Shymkent Fuel Distributors LLP",
+        "description": "Refinery product sales settlement third quarter",
+        "amount": "1946791.21",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "revenue",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-B4-0014",
+        "date": "2025-10-15",
+        "counterparty": "Shymkent Fuel Distributors LLP",
+        "description": "Refinery product sales settlement fourth quarter",
+        "amount": "3084375.68",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "revenue",
+        "related_party": false,
+        "excluded": false,
+        "one_off": false,
+        "reclassified": false,
+        "notes": []
+      },
+      {
+        "txn_id": "TXN-B4-0026",
+        "date": "2025-11-20",
+        "counterparty": "Turkistan Petroleum Traders LLP",
+        "description": "Advance cargo sales settlement fourth quarter",
+        "amount": "979403.89",
+        "amount_usd": null,
+        "currency": "USD",
+        "category": "revenue",
+        "related_party": false,
+        "excluded": true,
+        "one_off": false,
+        "reclassified": false,
+        "notes": [
+          "excluded from the 2025 covenant period by the auditor's cut-off note"
+        ]
+      }
+    ],
+    "cells": {
+      "6.1": {
+        "metric": "q4_revenue_floor",
+        "requires": [
+          "revenue"
+        ],
+        "raw": "3084375.68",
+        "actual": "3084375.68",
+        "status": "BREACH",
+        "comparison": "3084375.68 < 3500000.00 (minimum)",
+        "evidence": "TXN-B4-0026",
+        "threshold": "3500000.00",
+        "direction": "min",
+        "unit": "usd",
+        "covenant_text": "Минимальная выручка за четвёртый квартал. Заёмщик, Shymkent Refinery JSC, обязуется обеспечить Выручку за четвёртый финансовый квартал периода, оканчивающегося 2025-12-31, в размере не менее $3,500,000.00. Для целей настоящего ковенанта Выручка за четвёртый квартал включает только Выручку, признанную в этом квартале, определяемую на основании аудированной отчётности Заёмщика с учётом любой корректировки по методу начисления или переквалификации периода, принятой аудиторами Заёмщика для целей соблюдения ковенанта."
+      },
+      "6.2": {
+        "metric": "category_expense_cap",
+        "requires": [
+          "capex"
+        ],
+        "raw": "1527726.21",
+        "actual": "1527726.21",
+        "status": "COMPLIANT",
+        "comparison": "1527726.21 <= 2000000.00 (maximum)",
+        "evidence": null,
+        "threshold": "2000000.00",
+        "direction": "max",
+        "unit": "usd",
+        "covenant_text": "Максимальные расходы по категории. Для целей настоящего ковенанта под расходами по статье «Капитальные затраты» понимаются суммы, отнесённые к данной статье в аудированной финансовой отчётности Заёмщика, включая суммы, переквалифицированные в неё независимым аудитором Заёмщика, и за вычетом сумм, переквалифицированных аудитором из данной статьи. Shymkent Refinery JSC не вправе допускать, чтобы такие совокупные расходы за период с 2025-01-01 по 2025-12-31 превысили $2,000,000.00."
+      },
+      "6.3": {
+        "metric": "related_party_cap",
+        "requires": [
+          "@related"
+        ],
+        "raw": "303949.09",
+        "actual": "303949.09",
+        "status": "COMPLIANT",
+        "comparison": "303949.09 <= 500000.00 (maximum)",
+        "evidence": null,
+        "threshold": "500000.00",
+        "direction": "max",
+        "unit": "usd",
+        "covenant_text": "Максимальные платежи связанным сторонам. Для целей настоящей статьи под связанной стороной понимается любое лицо, признанное связанной стороной Заёмщика по данным 5 досье «Знай своего клиента» (KYC), независимо от назначения платежа, указанного в бухгалтерском учёте Заёмщика. Shymkent Refinery JSC обязуется не допускать, чтобы совокупный размер Ограниченных платежей в пользу связанных сторон за период с 2025-01-01 по 2025-12-31 превышал $500,000.00."
+      }
+    }
+  }
+}

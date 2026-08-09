@@ -1,0 +1,54 @@
+{
+  "P1/6.1": {
+    "agree": false,
+    "concern": "Analyst's metric definition omits lease payments from the denominator; clause 6.1 specifies the capital intensity ratio is total capital expenditures divided by the sum of operating expenses AND lease payments. The analyst's input assembly does not mention lease payments, contradicting the clause definition.",
+    "confidence": 0.86,
+    "cross_check": null
+  },
+  "P1/6.2": {
+    "agree": true,
+    "concern": "",
+    "confidence": 0.97
+  },
+  "P1/6.3": {
+    "agree": true,
+    "concern": "",
+    "confidence": 0.98
+  },
+  "P2/6.1": {
+    "agree": true,
+    "concern": "",
+    "confidence": 0.98
+  },
+  "P2/6.2": {
+    "agree": true,
+    "concern": "",
+    "confidence": 0.97
+  },
+  "P2/6.3": {
+    "agree": false,
+    "concern": "Analyst counts TXN-P2-0012 as a related‑party payment using a \"kyc‑fallback\" even though Clause 6.3 explicitly says related‑party status is determined only by the policy recorded in the borrower’s KYC dossier; with no KYC identification, the transaction cannot be classified as related‑party, so the metric is mis‑defined.",
+    "confidence": 0.95,
+    "cross_check": null
+  },
+  "P3/6.1": {
+    "agree": true,
+    "concern": "",
+    "confidence": 0.99
+  },
+  "P3/6.2": {
+    "agree": true,
+    "concern": "",
+    "confidence": 0.97
+  },
+  "P3/6.3": {
+    "agree": true,
+    "concern": "",
+    "confidence": 0.98
+  },
+  "P4/6.1": {
+    "agree": true,
+    "concern": "",
+    "confidence": 0.99
+  }
+}

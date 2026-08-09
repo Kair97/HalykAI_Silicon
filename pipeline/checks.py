@@ -58,9 +58,11 @@ def check_covenants(facts, targets):
     out = []
     for sid in targets:
         cov = facts["covenants"].get(sid, {})
-        if set(cov) != {"6.1", "6.2", "6.3"}:
-            out.append(Issue(FAIL, sid, f"parsed clauses {sorted(cov)} != 6.1/6.2/6.3"))
         for clause, spec in cov.items():
+            if spec.get("threshold") is None:
+                out.append(Issue(FAIL, f"{sid}/{clause}",
+                                 spec.get("parse_error", "threshold did not parse")))
+                continue
             try:
                 thr = Decimal(spec["threshold"])
             except Exception:

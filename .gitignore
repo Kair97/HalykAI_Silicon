@@ -7,3 +7,6 @@ __pycache__/
 *.pyc
 agent/runs/
 runs/
+*.zip
+agentic-bank-hidden/documents/
+agentic-bank-hidden/resultsHalyk/

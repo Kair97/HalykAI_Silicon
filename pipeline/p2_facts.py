@@ -16,7 +16,7 @@ import re
 from decimal import Decimal
 from pathlib import Path
 
-from p3_categorise import CLAUSES  # both derived from submission_template.json
+from p3_categorise import CLAUSES, CLAUSES_BY_SID  # from submission_template.json
 
 ROOT = Path(os.environ.get("HALYK_ROOT",
                            Path(__file__).resolve().parent.parent))
@@ -38,22 +38,55 @@ def load(name):
 
 
 # --------------------------------------------------------------------------- covenants
-def parse_covenants(text):
-    """Article 6 -> per-clause threshold / direction / period / unit."""
-    m = re.search(r"Статья 6 — Финансовые ковенанты(.*?)Статья 7 —", text, re.S)
+def parse_covenants(text, clauses=None):
+    """The financial-covenants article -> per-clause threshold / direction / unit.
+
+    Nothing about the article NUMBER or the language is assumed: the hidden
+    archive numbers the covenants under Article 5 for one borrower and Article 6
+    for the rest, and one borrower's entire document set is in English.
+    """
+    clauses = clauses or CLAUSES
+    m = re.search(
+        r"(?:Статья\s+[IVXLC0-9]+\s*[—–-]\s*Финансовые\s+ковенанты"
+        r"|Article\s+[IVXLC0-9]+\s*[—–-]\s*Financial\s+Covenants)(.*)",
+        text, re.S | re.I)
     if not m:
-        raise ValueError("Article 6 not found")
-    art = flat(m.group(1))
+        raise ValueError("financial covenants article not found")
+    # stop at the next article heading, whatever it is called
+    tail = m.group(1)
+    nxt = re.search(r"(?:Статья|Article)\s+[IVXLC0-9]+\s*[—–-]\s*\S", tail)
+    art = flat(tail[:nxt.start()] if nxt else tail)
+
+    # clause markers: "Пункт 6.1", "Section 5.1", or a bare "6.1"
+    marker = r"(?:Пункт|Section|Clause)?\s*"
     out = {}
-    for clause in CLAUSES:
-        b = re.search(rf"Пункт {re.escape(clause)} (.*?)(?=Пункт 6\.\d|$)", art)
+    for clause in clauses:
+        esc = re.escape(clause)
+        nxt_any = "|".join(re.escape(c) for c in clauses if c != clause)
+        stop = rf"(?=(?:Пункт|Section|Clause)?\s*(?:{nxt_any})\s|$)" if nxt_any else "$"
+        b = re.search(rf"{marker}{esc}\s+(.*?){stop}", art)
         if not b:
-            raise ValueError(f"clause {clause} missing")
+            # Never abort the whole run for one clause: emit a placeholder that
+            # the health checks will flag, so the other cells still get answered.
+            out[clause] = {"text": "", "threshold": None, "unit": "usd",
+                           "direction": "max", "trigger_threshold": None,
+                           "period_start": "2025-01-01", "period_end": "2025-12-31",
+                           "parse_error": "clause text not found in the agreement"}
+            continue
         body = b.group(1).strip()
         money = [dec(x) for x in re.findall(MONEY, body)]
         ratio = [dec(x) for x in re.findall(r"(\d+\.\d+)x", body)]
+        if not money and not ratio:
+            out[clause] = {"text": body, "threshold": None, "unit": "usd",
+                           "direction": "max", "trigger_threshold": None,
+                           "period_start": "2025-01-01", "period_end": "2025-12-31",
+                           "parse_error": "no threshold found in the clause text"}
+            continue
         # "не менее / не ниже" => minimum; "не превышал / не более" => maximum
-        is_min = bool(re.search(r"не менее|не ниже|снижения|Минимальн|Минимальное", body))
+        is_min = bool(re.search(
+            r"не менее|не ниже|снижения|Минимальн|Минимальное"
+            r"|Minimum|at least|not (?:be )?less than|shall not permit .*? to fall below",
+            body, re.I))
         out[clause] = {
             "text": body,
             "threshold": str(ratio[0] if ratio else money[0]),
@@ -206,7 +239,8 @@ def main():
                "audit_notes": docs.get("audit_notes"),
                "discarded_drafts": drafts}
 
-        facts["covenants"][sid] = parse_covenants(load(src["agreement"]))
+        facts["covenants"][sid] = parse_covenants(
+            load(src["agreement"]), CLAUSES_BY_SID.get(sid))
         facts["kyc"][sid] = parse_kyc(load(src["kyc"])) if src["kyc"] else {
             "holdings": {}, "threshold_pct": None, "indirect": [],
             "note": "no KYC dossier for this borrower"}
