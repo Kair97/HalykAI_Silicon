@@ -1,6 +1,6 @@
 {
-  "team": "KOZ",
-  "contact_email": "orynbekkairo@gmail.com",
+  "team": "Silicon",
+  "contact_email": "241600@astanait.edu.kz",
   "model": "openai/gpt-oss-120b",
   "answers": {
     "S1": {

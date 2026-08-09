@@ -111,9 +111,10 @@ def main(strict=True):
     txns_all, log, facts = build()
     template = json.loads((ARCHIVE / "submission_template.json").read_text(encoding="utf-8"))
     sub = json.loads(json.dumps(template))
-    sub["team"] = "KOZ"
-    sub["contact_email"] = "orynbekkairo@gmail.com"
-    sub["model"] = "claude-opus-5"
+    # identity comes from the environment so it is set in exactly one place
+    sub["team"] = os.environ.get("TEAM_NAME", "Silicon")
+    sub["contact_email"] = os.environ.get("CONTACT_EMAIL", "241600@astanait.edu.kz")
+    sub["model"] = os.environ.get("SUBMISSION_MODEL_LABEL", "openai/gpt-oss-120b")
 
     index = json.loads((ROOT / "index.json").read_text(encoding="utf-8"))
     issues = (checks.check_triage(index, TARGETS)
