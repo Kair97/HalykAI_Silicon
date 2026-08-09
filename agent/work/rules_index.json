@@ -104,7 +104,7 @@
           "rule_type": "CAPEX",
           "metric_shape": "category_expense_cap",
           "requires": [
-            "capex"
+            "marketing"
           ],
           "threshold": "600000.00",
           "direction": "max",
@@ -943,7 +943,7 @@
           "rule_type": "CAPEX",
           "metric_shape": "category_expense_cap",
           "requires": [
-            "capex"
+            "marketing"
           ],
           "threshold": "400000.00",
           "direction": "max",
@@ -1935,7 +1935,7 @@
           "rule_type": "CAPEX",
           "metric_shape": "category_expense_cap",
           "requires": [
-            "capex"
+            "marketing"
           ],
           "threshold": "400000.00",
           "direction": "max",
@@ -2098,7 +2098,7 @@
           "rule_type": "CAPEX",
           "metric_shape": "category_expense_cap",
           "requires": [
-            "capex"
+            "marketing"
           ],
           "threshold": "400000.00",
           "direction": "max",
@@ -2408,7 +2408,7 @@
           "rule_type": "CAPEX",
           "metric_shape": "category_expense_cap",
           "requires": [
-            "capex"
+            "marketing"
           ],
           "threshold": "700000.00",
           "direction": "max",

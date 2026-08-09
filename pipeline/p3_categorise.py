@@ -48,7 +48,10 @@ def scenario_of(txn_id):
 # a wider vocabulary than the public one ("Bulk cement sales", "Imported clinker
 # grinding equipment", "Routine plant maintenance and operating costs").
 RULES = [
-    ("capex_transfer",    r"transfer of .*to (a )?subsidiary|asset transfer to"),
+    ("capex_transfer",    r"transfer of .*to (a |an )?(unrestricted )?subsidiar"
+                          r"|intra-?group transfer|asset transfer to"
+                          r"|transfer to (a |an )?(unrestricted )?subsidiar"
+                          r"|\w+ transfer to "),
     ("debt_repayment",    r"principal repayment|repayment of (the )?(term )?loan"
                           r"|scheduled amortisation"),
     ("financing_inflow",  r"(facility|loan) drawdown|drawdown( |,|$)|tranche [A-Z]"

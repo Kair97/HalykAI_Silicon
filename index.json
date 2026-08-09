@@ -4348,8 +4348,8 @@
     "kept": 129,
     "by_type": {
       "financial_statements": 29,
-      "audit_notes": 39,
       "kyc_dossier": 34,
+      "audit_notes": 39,
       "credit_agreement": 27
     },
     "superseded_dropped": 27

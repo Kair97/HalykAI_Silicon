@@ -235,12 +235,12 @@
       "6.3": {
         "metric": "category_expense_cap",
         "requires": [
-          "capex"
+          "marketing"
         ],
-        "raw": "2993644.31",
-        "actual": "2993644.31",
-        "status": "BREACH",
-        "comparison": "2993644.31 > 400000.00 (maximum)",
+        "raw": "254812.36",
+        "actual": "254812.36",
+        "status": "COMPLIANT",
+        "comparison": "254812.36 <= 400000.00 (maximum)",
         "evidence": null,
         "threshold": "400000.00",
         "direction": "max",
@@ -781,12 +781,12 @@
       "6.3": {
         "metric": "category_expense_cap",
         "requires": [
-          "capex"
+          "marketing"
         ],
-        "raw": "0",
-        "actual": "0.01",
+        "raw": "255845.95",
+        "actual": "255845.95",
         "status": "COMPLIANT",
-        "comparison": "0 <= 400000.00 (maximum)",
+        "comparison": "255845.95 <= 400000.00 (maximum)",
         "evidence": null,
         "threshold": "400000.00",
         "direction": "max",
@@ -1674,7 +1674,7 @@
         "amount": "-1180442.55",
         "amount_usd": null,
         "currency": "USD",
-        "category": "capex",
+        "category": "capex_transfer",
         "related_party": false,
         "excluded": false,
         "one_off": false,
@@ -1748,10 +1748,10 @@
         "requires": [
           "capex_transfer"
         ],
-        "raw": "0",
-        "actual": "0.01",
-        "status": "COMPLIANT",
-        "comparison": "0 <= 250000.00 (maximum)",
+        "raw": "1180442.55",
+        "actual": "1180442.55",
+        "status": "BREACH",
+        "comparison": "1180442.55 > 250000.00 (maximum)",
         "evidence": null,
         "threshold": "250000.00",
         "direction": "max",
@@ -1763,10 +1763,10 @@
         "requires": [
           "financing_inflow"
         ],
-        "raw": "1674577.78",
-        "actual": "1674577.78",
+        "raw": "2855020.33",
+        "actual": "2855020.33",
         "status": "BREACH",
-        "comparison": "1674577.78 < 8000000.00 (minimum)",
+        "comparison": "2855020.33 < 8000000.00 (minimum)",
         "evidence": null,
         "threshold": "8000000.00",
         "direction": "min",
@@ -2672,12 +2672,12 @@
       "6.1": {
         "metric": "category_expense_cap",
         "requires": [
-          "capex"
+          "marketing"
         ],
-        "raw": "0",
-        "actual": "0.01",
+        "raw": "373655.73",
+        "actual": "373655.73",
         "status": "COMPLIANT",
-        "comparison": "0 <= 400000.00 (maximum)",
+        "comparison": "373655.73 <= 400000.00 (maximum)",
         "evidence": null,
         "threshold": "400000.00",
         "direction": "max",
@@ -3387,7 +3387,7 @@
         "amount": "-820899.28",
         "amount_usd": null,
         "currency": "USD",
-        "category": "capex",
+        "category": "capex_transfer",
         "related_party": false,
         "excluded": false,
         "one_off": false,
@@ -3447,7 +3447,7 @@
         "amount": "-822266.56",
         "amount_usd": null,
         "currency": "USD",
-        "category": "capex",
+        "category": "capex_transfer",
         "related_party": false,
         "excluded": false,
         "one_off": false,
@@ -3523,10 +3523,10 @@
         "requires": [
           "capex_transfer"
         ],
-        "raw": "0",
-        "actual": "0.01",
-        "status": "COMPLIANT",
-        "comparison": "springing trigger met: financing inflows 9738799.03 > 500000.00; covenant applies; 0 <= 2.50 (maximum)",
+        "raw": "1643165.84",
+        "actual": "1643165.84",
+        "status": "BREACH",
+        "comparison": "springing trigger met: financing inflows 9738799.03 > 500000.00; covenant applies; 1643165.84 > 2.50 (maximum)",
         "evidence": null,
         "threshold": "2.50",
         "direction": "max",
@@ -4353,12 +4353,12 @@
       "6.1": {
         "metric": "category_expense_cap",
         "requires": [
-          "capex"
+          "marketing"
         ],
-        "raw": "7072800.04",
-        "actual": "7072800.04",
-        "status": "BREACH",
-        "comparison": "7072800.04 > 600000.00 (maximum)",
+        "raw": "411236.09",
+        "actual": "411236.09",
+        "status": "COMPLIANT",
+        "comparison": "411236.09 <= 600000.00 (maximum)",
         "evidence": null,
         "threshold": "600000.00",
         "direction": "max",
@@ -4807,12 +4807,12 @@
       "6.1": {
         "metric": "category_expense_cap",
         "requires": [
-          "capex"
+          "marketing"
         ],
-        "raw": "7123566.08",
-        "actual": "7123566.08",
-        "status": "BREACH",
-        "comparison": "7123566.08 > 700000.00 (maximum)",
+        "raw": "487332.19",
+        "actual": "487332.19",
+        "status": "COMPLIANT",
+        "comparison": "487332.19 <= 700000.00 (maximum)",
         "evidence": null,
         "threshold": "700000.00",
         "direction": "max",
