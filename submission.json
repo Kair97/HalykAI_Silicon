@@ -380,7 +380,7 @@
     "J6": {
       "6.1": {
         "status": "COMPLIANT",
-        "actual": 2551757.64,
+        "actual": 19295604.91,
         "evidence_txn_id": null
       },
       "6.2": {
@@ -389,8 +389,8 @@
         "evidence_txn_id": null
       },
       "6.3": {
-        "status": "COMPLIANT",
-        "actual": 12244543.24,
+        "status": "BREACH",
+        "actual": 0.05,
         "evidence_txn_id": null
       }
     },
@@ -402,7 +402,7 @@
       },
       "6.2": {
         "status": "COMPLIANT",
-        "actual": 350988728.77,
+        "actual": 0.01,
         "evidence_txn_id": null
       },
       "6.3": {
@@ -468,7 +468,7 @@
       },
       "6.3": {
         "status": "COMPLIANT",
-        "actual": 0.01,
+        "actual": 2.29,
         "evidence_txn_id": null
       },
       "6.4": {

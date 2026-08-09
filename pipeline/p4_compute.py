@@ -20,6 +20,10 @@ ROOT = Path(os.environ.get("HALYK_ROOT",
 ARCHIVE = Path(os.environ.get("HALYK_ARCHIVE", ROOT / "agentic-bank-public"))
 Z = Decimal(0)
 
+# Formula specs derived by the LLM from the covenant text, keyed (sid, clause).
+# Populated by agent/run.py; empty means the rule library is used instead.
+LLM_SPECS = {}
+
 # Hand transcription of the reference archive's cells, kept as a REGRESSION
 # CROSS-CHECK only. main() asserts it agrees with the wording-driven library
 # wherever a key exists. On an archive with different borrower ids these keys
@@ -147,9 +151,25 @@ def main(strict=True):
             # A covenant whose wording matches no formula must not kill the run:
             # every OTHER cell is still worth answering. Fall back to the closest
             # safe reading, emit a value, and raise FAIL so it is visible.
+            llm_spec = LLM_SPECS.get((sid, clause))
             try:
-                desc, requires, fn = metrics.resolve(spec)
-                value = fn(txns, facts, spec)
+                if llm_spec is not None:
+                    # The LLM supplied the STRUCTURE; Decimal does the arithmetic.
+                    desc = ("llm:" + llm_spec["operation"] + " " +
+                            "+".join(llm_spec.get("numerator") or []) +
+                            ("/" + "+".join(llm_spec["denominator"])
+                             if llm_spec.get("denominator") else ""))
+                    requires = tuple(n for n in (llm_spec.get("numerator") or [])
+                                     + (llm_spec.get("denominator") or [])
+                                     if not n.startswith("@"))
+                    value = metrics.eval_spec(llm_spec, txns, facts)
+                    spec = dict(spec, threshold=llm_spec["threshold"],
+                                unit="ratio" if metrics.spec_returns_ratio(llm_spec)
+                                else "usd",
+                                direction=llm_spec["direction"])
+                else:
+                    desc, requires, fn = metrics.resolve(spec)
+                    value = fn(txns, facts, spec)
             except metrics.UnmatchedCovenant as e:
                 desc, requires = "UNMATCHED COVENANT WORDING", ()
                 value = metrics.fallback_value(txns, spec)
@@ -157,14 +177,16 @@ def main(strict=True):
                     checks.FAIL, f"{sid}/{clause}",
                     f"no metric matched this covenant's wording; emitted a "
                     f"best-effort figure. {str(e)[:160]}"))
-            if (sid, clause) in EXPECTED:
+            # EXPECTED cross-checks the RULE library only; an LLM-derived spec
+            # is a different (and deliberately independent) reading.
+            if llm_spec is None and (sid, clause) in EXPECTED:
                 exp_req, _d, exp_fn = EXPECTED[(sid, clause)]
                 assert exp_fn(txns, facts) == value and set(exp_req) == set(requires), (
                     f"{sid}/{clause}: the wording-driven library disagrees with the hand "
                     f"transcription in EXPECTED -- one of the two is wrong")
             # Pick the threshold whose unit matches what the formula returns:
             # conditional covenants quote a trigger ratio AND a cash limit.
-            if desc != "UNMATCHED COVENANT WORDING":
+            if desc != "UNMATCHED COVENANT WORDING" and llm_spec is None:
                 thr, unit = metrics.pick_threshold(desc, spec)
                 spec = dict(spec, threshold=thr, unit=unit)
             issues += checks.check_metric_inputs(sid, clause, requires, txns, facts, value)

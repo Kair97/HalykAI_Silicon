@@ -1752,7 +1752,16 @@
       "fx_pairs": []
     }
   },
-  "group": {},
+  "group": {
+    "parent": {
+      "opening_nbv": "148028989.69",
+      "depreciation": "15826229.43",
+      "closing_nbv": "154050122.81",
+      "additions": "21847362.55",
+      "source": "a5cc1400b640",
+      "subsidiary": "Ekibastuz Power Services JSC"
+    }
+  },
   "sources": {
     "J3": {
       "agreement": "0c662186139a",

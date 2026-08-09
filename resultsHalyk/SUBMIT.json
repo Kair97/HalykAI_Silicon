@@ -389,8 +389,8 @@
         "evidence_txn_id": null
       },
       "6.3": {
-        "status": "COMPLIANT",
-        "actual": 12244543.24,
+        "status": "BREACH",
+        "actual": 0.05,
         "evidence_txn_id": null
       }
     },
@@ -468,7 +468,7 @@
       },
       "6.3": {
         "status": "COMPLIANT",
-        "actual": 0.01,
+        "actual": 2.29,
         "evidence_txn_id": null
       },
       "6.4": {

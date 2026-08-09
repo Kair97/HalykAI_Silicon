@@ -446,3 +446,65 @@ def fallback_value(txns, spec):
         if v:
             return v
     return Decimal("0.01")
+
+
+# --------------------------------------------------------------------------- LLM specs
+def _leg(txns, facts, names):
+    """Total for one side of an LLM-derived formula."""
+    s = Z
+    for n in names:
+        if n == "@related":
+            s += rp(txns)
+        elif n == "@group_capex":
+            s += group_additions(facts)
+        elif n == "@disclosed":
+            s += disclosed(facts)
+        elif n == "@one_off":
+            s += total(txns, "opex", one_off=True)
+        elif n == "@net_debt":
+            s += net_debt(txns)
+        else:
+            s += total(txns, n)
+    return s
+
+
+def eval_spec(spec, txns, facts):
+    """Execute an LLM-derived formula spec. All arithmetic is Decimal here --
+    the model supplied the STRUCTURE, never a value."""
+    num, den = spec.get("numerator") or [], spec.get("denominator") or []
+    op, period = spec["operation"], spec.get("period", "year")
+
+    if period in ("quarter_min", "quarter_max", "quarter_share"):
+        per_q = {}
+        for q in ("Q1", "Q2", "Q3", "Q4"):
+            rows = [t for t in txns
+                    if "Q" + str((int(t["date"][5:7]) - 1) // 3 + 1) == q]
+            per_q[q] = _leg(rows, facts, num)
+        vals = [v for v in per_q.values()]
+        if period == "quarter_min":
+            return min(vals) if vals else Z
+        if period == "quarter_max":
+            return max(vals) if vals else Z
+        return div(max(vals) if vals else Z, _leg(txns, facts, num))
+
+    if period == "q4":
+        txns = [t for t in txns if t["date"][5:7] in ("10", "11", "12")]
+
+    if op == "sum":
+        return abs(_leg(txns, facts, num))
+    if op == "ratio":
+        return div(abs(_leg(txns, facts, num)), abs(_leg(txns, facts, den)))
+    if op == "difference":
+        return abs(_leg(txns, facts, num)) - abs(_leg(txns, facts, den))
+    if op == "max_of":
+        return max([abs(_leg(txns, facts, [n])) for n in num] or [Z])
+    if op == "min_of":
+        return min([abs(_leg(txns, facts, [n])) for n in num] or [Z])
+    if op == "difference_max":
+        biggest = max([abs(_leg(txns, facts, [d])) for d in den] or [Z])
+        return abs(_leg(txns, facts, num)) - biggest
+    return Z
+
+
+def spec_returns_ratio(spec):
+    return spec["operation"] == "ratio" or spec.get("period") == "quarter_share"
